@@ -1,0 +1,291 @@
+﻿import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { 
+  Check, FileText, Clock, HeartHandshake, 
+  FileCheck, CheckCircle, TrendingUp, Calculator,
+  Handshake
+} from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useToast } from '@/hooks/use-toast.js';
+import Header from '@/components/Header.jsx';
+import Footer from '@/components/Footer.jsx';
+
+function ContactPage() {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    practiceName: '',
+    numberOfPhysicians: '1',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSelectChange = (value) => {
+    setFormData({
+      ...formData,
+      numberOfPhysicians: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      toast({
+        title: 'Contact Us Scheduled',
+        description: 'Our experts will contact you shortly.'
+      });
+
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        practiceName: '',
+        numberOfPhysicians: '1',
+        message: ''
+      });
+      setIsSubmitting(false);
+    }, 1000);
+  };
+
+  const stats = [
+    { icon: <FileText className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '$500M+', label: 'Value of claims processed' },
+    { icon: <Handshake className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '24', label: 'Accounts Receivable Days' },
+    { icon: <Clock className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '48Hours', label: 'Turn Around Time (TAT)' },
+    { icon: <HeartHandshake className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '99%', label: 'Customer Retention' },
+    { icon: <FileCheck className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '2.7M', label: 'Number of Claims Processed' },
+    { icon: <CheckCircle className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '98%', label: 'First Pass Clean Claims Rate' },
+    { icon: <TrendingUp className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '5%-10%', label: 'Revenue Improvement' },
+    { icon: <Calculator className="w-10 h-10 mb-3 text-slate-700 font-light stroke-[1.5]" />, value: '30%', label: 'Reduction in A/R' }
+  ];
+
+  const bullets = [
+    '98% accurate claims submissions through RCM tools',
+    'Fast recovery of AR within 24 days.',
+    'Quick Payments from insurance within 30 days.',
+    'Complimentary Credentialing of all providers with desired payers.',
+    '30% increase in revenue through super-fast collections',
+    'Consistent cash flow with diligent AR follow-ups.'
+  ];
+
+  return (
+    <>
+      <Helmet>
+        <title>Contact Us | TransMedex</title>
+        <meta name="description" content="Contact Us with TransMedex. Stop spending your valuable time battling billing woes." />
+      </Helmet>
+
+      <div className="min-h-screen flex flex-col bg-background text-foreground overflow-hidden">
+        <Header />
+
+        <main className="flex-grow">
+          {/* Top Hero / Form Section */}
+          <section className="py-20 bg-[#f4eff3]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                
+                {/* Left Form */}
+                <motion.div 
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  className="bg-white rounded-xl shadow-lg border border-slate-200 p-8 md:p-10"
+                >
+                  <div className="text-center mb-8">
+                    <h2 className="text-2xl font-bold text-slate-900 mb-2">Contact Us</h2>
+                    <p className="text-slate-600">Get connected with our experts.</p>
+                  </div>
+
+                  <form onSubmit={handleSubmit} className="space-y-5">
+                    <div className="space-y-2">
+                      <Label htmlFor="firstName" className="text-slate-700 font-medium">First Name <span className="text-red-500">*</span></Label>
+                      <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required className="border-slate-300" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="lastName" className="text-slate-700 font-medium">Last Name <span className="text-red-500">*</span></Label>
+                      <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required className="border-slate-300" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email" className="text-slate-700 font-medium">Email <span className="text-red-500">*</span></Label>
+                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required className="border-slate-300" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="phone" className="text-slate-700 font-medium">Phone <span className="text-red-500">*</span></Label>
+                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} required className="border-slate-300" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="practiceName" className="text-slate-700 font-medium">Practice Name <span className="text-red-500">*</span></Label>
+                      <Input id="practiceName" name="practiceName" value={formData.practiceName} onChange={handleChange} required className="border-slate-300" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label className="text-slate-700 font-medium">Number of Physicians <span className="text-red-500">*</span></Label>
+                      <Select value={formData.numberOfPhysicians} onValueChange={handleSelectChange}>
+                        <SelectTrigger className="border-slate-300">
+                          <SelectValue placeholder="Select" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="1">1</SelectItem>
+                          <SelectItem value="2-5">2-5</SelectItem>
+                          <SelectItem value="6-10">6-10</SelectItem>
+                          <SelectItem value="10+">10+</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="message" className="text-slate-700 font-medium">Message <span className="text-red-500">*</span></Label>
+                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} required className="border-slate-300" />
+                    </div>
+                    
+                    <div className="pt-2 flex justify-center">
+                      <Button 
+                        type="submit" 
+                        disabled={isSubmitting}
+                        className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 text-sm font-semibold transition-colors"
+                      >
+                        {isSubmitting ? 'Scheduling...' : 'Contact Us'}
+                      </Button>
+                    </div>
+                  </form>
+                </motion.div>
+
+                {/* Right Content */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  className="pt-4 lg:pt-12"
+                >
+                  <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+                    Stop Spending Your Valuable Time Battling Billing Woes
+                  </h1>
+                  <p className="text-slate-700 mb-10 leading-relaxed">
+                    Reclaim your time and boost productivity with our comprehensive billing solutions to make the most out of your time and revenue. Our time-saving automated billing solutions are tailored to meet the unique needs of your practice, enabling you to automate manual processes and reduce billing errors. By choosing us, you can enjoy a multitude of advantages, such as:
+                  </p>
+
+                  <ul className="space-y-4 mb-10">
+                    {bullets.map((bullet, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <div className="mt-1 flex-shrink-0 text-[#8c2a8d]">
+                          <Check className="w-5 h-5 stroke-[3]" />
+                        </div>
+                        <span className="text-slate-700 font-medium text-[15px]">{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <p className="text-slate-800 font-semibold text-lg">
+                    Talk to our experts at <span className="text-slate-900">+1 ( 609 ) 793-0400</span>
+                  </p>
+                </motion.div>
+
+              </div>
+            </div>
+          </section>
+
+          {/* Success in Numbers Section */}
+          <section className="py-20 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-center text-slate-900 mb-20">Our Success in Numbers</h2>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-y-16 gap-x-8 text-center">
+                {stats.map((stat, i) => (
+                  <div key={i} className="flex flex-col items-center">
+                    {stat.icon}
+                    <div className="text-3xl font-bold text-slate-900 mb-2">{stat.value}</div>
+                    <div className="text-sm font-medium text-slate-500 uppercase tracking-wider max-w-[150px] leading-snug">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Healthcare Products Mockup Section */}
+          <section className="py-20 bg-slate-50">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Provider-Focused Healthcare Products and Medical Billing Services</h2>
+              <p className="text-slate-600 mb-16">Transcure aims to provide high-quality medical billing solutions to streamline cash flow and reduce revenue losses.</p>
+              
+              <div className="relative mx-auto rounded-xl overflow-hidden shadow-2xl border border-slate-200">
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600" 
+                  alt="Dashboard interface" 
+                  className="w-full h-auto object-cover max-h-[600px]"
+                />
+              </div>
+            </div>
+          </section>
+
+          {/* Alternating Content Blocks */}
+          <section className="py-24 bg-white">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
+              
+              {/* Block 1 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-6">Achieve Better Clinical Outcomes</h3>
+                  <p className="text-slate-600 leading-relaxed mb-8">
+                    Work smartly with Transcure and get customized medical billing solutions for hassle-free practice management. Increase operational efficiency, better clinical outcomes, and improve patient health with our healthcare IT products and RCM services. Gain better control over practice procedures and administrative tasks with Transcure Medical Billing.
+                  </p>
+                  <Button asChild className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 font-semibold">
+                    <Link to="/specialties">View Specialties</Link>
+                  </Button>
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-lg h-[400px]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200" 
+                    alt="Doctors reviewing clinical data" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+
+              {/* Block 2 */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-lg h-[400px]">
+                  <img 
+                    src="https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&q=80&w=1200" 
+                    alt="Make Your Revenue Cycle Efficient with Piggy Bank" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="order-1 lg:order-2">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-6">Make Your Revenue Cycle Efficient</h3>
+                  <p className="text-slate-600 leading-relaxed mb-8">
+                    Get stress-free billing and avoid physician burnout by efficient revenue cycle management in the modern healthcare industry. Give your patients better experience by involving them in care management. We help you collaborate with patients, payers, and other organizations to thrive in the competitive healthcare marketplace.
+                  </p>
+                  <Button asChild className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 font-semibold">
+                    <Link to="/specialties">View Specialties</Link>
+                  </Button>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </main>
+
+        <Footer />
+      </div>
+    </>
+  );
+}
+
+export default ContactPage;
+
+

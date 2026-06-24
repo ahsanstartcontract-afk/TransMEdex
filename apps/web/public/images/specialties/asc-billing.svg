@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#fbf8ef"/>
+  <g transform="translate(60,50)">
+    <rect x="0" y="0" width="160" height="160" rx="16" fill="#f39c12"/>
+    <path d="M20 120h120v10H20z" fill="#fff"/>
+    <text x="190" y="80" fill="#88550a" font-size="28" font-family="Arial">ASC Billing</text>
+  </g>
+</svg>

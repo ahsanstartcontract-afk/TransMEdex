@@ -1,0 +1,24 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="800" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f2f99" />
+      <stop offset="100%" stop-color="#2a1f55" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" rx="40" fill="url(#bg)" />
+  <circle cx="300" cy="250" r="120" fill="#FFFFFF" fill-opacity="0.12" />
+  <circle cx="900" cy="300" r="140" fill="#FFFFFF" fill-opacity="0.08" />
+  <rect x="220" y="180" width="600" height="360" rx="36" fill="#ffffff" fill-opacity="0.12" />
+  <rect x="260" y="230" width="520" height="60" rx="30" fill="#ffffff" fill-opacity="0.4" />
+  <rect x="260" y="320" width="520" height="42" rx="21" fill="#ffffff" fill-opacity="0.3" />
+  <rect x="260" y="380" width="400" height="42" rx="21" fill="#ffffff" fill-opacity="0.3" />
+  <rect x="260" y="440" width="320" height="42" rx="21" fill="#ffffff" fill-opacity="0.3" />
+  <rect x="260" y="500" width="460" height="42" rx="21" fill="#ffffff" fill-opacity="0.3" />
+  <path d="M280 620C320 590 380 570 470 580C560 590 620 620 700 610C780 600 840 560 900 540" stroke="#fff" stroke-width="20" stroke-linecap="round" stroke-opacity="0.5" />
+  <circle cx="350" cy="270" r="18" fill="#ffffff" />
+  <circle cx="420" cy="270" r="18" fill="#ffffff" />
+  <circle cx="490" cy="270" r="18" fill="#ffffff" />
+  <circle cx="590" cy="270" r="18" fill="#ffffff" />
+  <text x="260" y="120" fill="#ffffff" font-family="Inter, sans-serif" font-size="48" font-weight="700">Athena Billing</text>
+  <text x="260" y="170" fill="#ffffff" font-family="Inter, sans-serif" font-size="24">Smart claims and faster reimbursement</text>
+</svg>

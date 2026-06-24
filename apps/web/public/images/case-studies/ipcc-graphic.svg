@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#f5fbff"/>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#041526">
+    <text x="24" y="48" font-size="22" font-weight="700">IPCC — Revenue Cycle Transformation</text>
+    <text x="24" y="80" font-size="14" fill="#475569">Comprehensive RCM services for regional expansion and AR recovery.</text>
+    <rect x="24" y="110" width="560" height="200" rx="12" fill="#fff" stroke="#eef7ff"/>
+  </g>
+</svg>

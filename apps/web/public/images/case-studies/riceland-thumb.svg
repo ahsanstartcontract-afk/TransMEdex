@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="480" height="320" rx="12" fill="#fff7fb"/>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#0f172a">
+    <text x="24" y="52" font-size="20" font-weight="700">Riceland Lab Billing</text>
+    <text x="24" y="88" font-size="12" fill="#475569">16% YoY revenue · 20 FTE reallocation</text>
+  </g>
+  <g transform="translate(320,40)">
+    <circle cx="68" cy="68" r="64" fill="#f3e8ff"/>
+  </g>
+</svg>

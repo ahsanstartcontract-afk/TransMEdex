@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#eef8fb"/>
+  <g transform="translate(40,40)">
+    <rect x="20" y="20" width="200" height="200" rx="20" fill="#2a9db5"/>
+    <circle cx="140" cy="120" r="40" fill="#fff"/>
+    <text x="250" y="90" fill="#13646a" font-size="28" font-family="Arial">Nephrology</text>
+  </g>
+</svg>
