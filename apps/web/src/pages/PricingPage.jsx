@@ -295,31 +295,31 @@ function PricingPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Mail className="w-4 h-4 text-[#0da1df]"/> Email Address</label>
-                  <input type="email" placeholder="Enter Your Email Address" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all" />
+                  <label htmlFor="email" className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Mail className="w-4 h-4 text-[#0da1df]"/> Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Enter Your Email Address" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all" />
                 </div>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Phone className="w-4 h-4 text-[#0da1df]"/> Contact Number</label>
-                  <input type="tel" placeholder="Enter Your Contact Number" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all" />
+                  <label htmlFor="phone" className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Phone className="w-4 h-4 text-[#0da1df]"/> Contact Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Enter Your Contact Number" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all" />
                 </div>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Calendar className="w-4 h-4 text-[#0da1df]"/> Date of Appointment</label>
-                  <input type="date" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all text-slate-600" />
+                  <label htmlFor="date" className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Calendar className="w-4 h-4 text-[#0da1df]"/> Date of Appointment</label>
+                  <input type="date" id="date" name="date" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all text-slate-600" />
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Building className="w-4 h-4 text-[#0da1df]"/> City</label>
-                  <select className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all text-slate-600 appearance-none">
+                  <label htmlFor="city" className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Building className="w-4 h-4 text-[#0da1df]"/> City</label>
+                  <select id="city" name="city" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all text-slate-600 appearance-none">
                     <option>Select Your City</option>
                   </select>
                 </div>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><MapPin className="w-4 h-4 text-[#0da1df]"/> Zip Code</label>
-                  <input type="text" placeholder="Enter Your Zip Code" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all" />
+                  <label htmlFor="zip" className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><MapPin className="w-4 h-4 text-[#0da1df]"/> Zip Code</label>
+                  <input type="text" id="zip" name="zip" placeholder="Enter Your Zip Code" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all" />
                 </div>
                 <div className="space-y-2">
-                  <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Globe className="w-4 h-4 text-[#0da1df]"/> State</label>
-                  <select className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all text-slate-600 appearance-none">
+                  <label htmlFor="state" className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500"><Globe className="w-4 h-4 text-[#0da1df]"/> State</label>
+                  <select id="state" name="state" className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white focus:outline-none focus:border-[#0da1df] focus:ring-1 focus:ring-[#0da1df] text-sm transition-all text-slate-600 appearance-none">
                     <option>Select your State</option>
                   </select>
                 </div>

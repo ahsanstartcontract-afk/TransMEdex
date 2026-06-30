@@ -78,7 +78,7 @@ export default function AdvancedMDPage() {
           <section className="relative overflow-hidden bg-gradient-to-br from-[#3a1f52] via-[#572e78] to-[#2d184e] text-white">
             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.18),_transparent_25%)]" />
             <div className="max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[1.15fr_0.85fr] items-start">
+              <div className="grid gap-10  items-start">
                 <div className="relative z-10">
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">AdvancedMD Medical Billing Services</p>
                   <h1 className="mt-4 text-4xl font-bold tracking-[-0.03em] sm:text-5xl lg:text-6xl">AdvancedMD Medical Billing Services | Certified Coders + Billers Inside Your AdvancedMD Plan</h1>
@@ -107,64 +107,7 @@ export default function AdvancedMDPage() {
                   </div>
                 </div>
 
-                <div className="relative z-10 rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-2xl backdrop-blur-xl sm:p-10">
-                  <div className="mb-6 text-center">
-                    <span className="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.32em] text-white/90">Letâ€™s Get Started</span>
-                  </div>
-                  <form onSubmit={handleSubmit} className="space-y-4 text-slate-950">
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <input
-                        name="firstName"
-                        value={form.firstName}
-                        onChange={handleChange}
-                        placeholder="First name"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                      <input
-                        name="lastName"
-                        value={form.lastName}
-                        onChange={handleChange}
-                        placeholder="Last name"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <input
-                        name="email"
-                        type="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        placeholder="Email"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                      <input
-                        name="phone"
-                        value={form.phone}
-                        onChange={handleChange}
-                        placeholder="Phone"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <input
-                      name="practice"
-                      value={form.practice}
-                      onChange={handleChange}
-                      placeholder="Practice name"
-                      className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                    />
-                    <textarea
-                      name="message"
-                      value={form.message}
-                      onChange={handleChange}
-                      placeholder="Message"
-                      rows={4}
-                      className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                    />
-                    <Button type="submit" size="lg" className="w-full rounded-full bg-secondary text-secondary-foreground px-6 py-3 text-base font-semibold">
-                      Contact Us
-                    </Button>
-                  </form>
-                </div>
+                
               </div>
             </div>
           </section>
@@ -211,7 +154,7 @@ export default function AdvancedMDPage() {
 
           <section className="py-20 bg-[#f8f5ff]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[0.95fr_1.05fr] items-center">
+              <div className="grid gap-10  items-center">
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">What is AdvancedMD and how does its billing system work?</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">What is AdvancedMD and how does its billing system work?</h2>
@@ -305,7 +248,7 @@ export default function AdvancedMDPage() {
           <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 shadow-sm">
-                <div className="grid gap-8 xl:grid-cols-[0.95fr_1.05fr] items-center">
+                <div className="grid gap-8  items-center">
                   <div>
                     <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Certifications behind every AdvancedMD account</p>
                     <h2 className="mt-4 text-3xl font-bold text-slate-950">Certifications behind every AdvancedMD account</h2>
@@ -441,7 +384,7 @@ export default function AdvancedMDPage() {
 
           <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[0.95fr_1.05fr] items-center rounded-[2rem] border border-slate-200 bg-[#f4f6ff] p-10 shadow-sm">
+              <div className="grid gap-10  items-center rounded-[2rem] border border-slate-200 bg-[#f4f6ff] p-10 shadow-sm">
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Your AdvancedMD billing doesnâ€™t stop when your biller does</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Your AdvancedMD billing doesnâ€™t stop when your biller does</h2>

@@ -74,7 +74,7 @@ function HealthcareSEOPage() {
                     <Link to="/contact">Contact Us</Link>
                   </Button>
                   <Button asChild size="lg" variant="outline" className="border-2 transition-all duration-200 active:scale-[0.98]">
-                    <a href="tel:+16097930400">Call (609) 793-0400</a>
+                    <a href="tel:8009660515">Call (800) 966-0515</a>
                   </Button>
                 </div>
               </motion.div>

@@ -69,7 +69,7 @@ export default function NextGenPage() {
           <section className="relative overflow-hidden bg-gradient-to-br from-[#3d1f57] via-[#5e2d8c] to-[#311d55] text-white">
             <div className="absolute inset-0 opacity-15 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.22),_transparent_30%)]" />
             <div className="max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[1.2fr_0.8fr] items-start">
+              <div className="grid gap-10  items-start">
                 <div className="relative z-10">
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">NextGen Billing Support</p>
                   <h1 className="mt-4 text-4xl font-bold sm:text-5xl lg:text-6xl">Optimize Overall Collections with NextGen Medical Software</h1>
@@ -98,63 +98,14 @@ export default function NextGenPage() {
                   </div>
                 </div>
 
-                <div className="relative z-10 rounded-[2rem] border border-white/10 bg-white/10 p-8 shadow-2xl backdrop-blur-xl sm:p-10">
-                  <div className="mb-6 text-center">
-                    <span className="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.32em] text-white/90">Contact Us</span>
-                  </div>
-                  <form onSubmit={handleSubmit} className="space-y-4 text-slate-950">
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <input
-                        name="firstName"
-                        value={form.firstName}
-                        onChange={handleChange}
-                        placeholder="First Name"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                      <input
-                        name="lastName"
-                        value={form.lastName}
-                        onChange={handleChange}
-                        placeholder="Last Name"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <input
-                        name="email"
-                        type="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        placeholder="Email"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                      <input
-                        name="phone"
-                        value={form.phone}
-                        onChange={handleChange}
-                        placeholder="Phone"
-                        className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <input
-                      name="practice"
-                      value={form.practice}
-                      onChange={handleChange}
-                      placeholder="Practice Name"
-                      className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                    />
-                    <Button type="submit" size="lg" className="w-full rounded-full bg-secondary text-secondary-foreground px-6 py-3 text-base font-semibold">
-                      Contact Us
-                    </Button>
-                  </form>
-                </div>
+                
               </div>
             </div>
           </section>
 
           <section className="py-16 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[0.9fr_1.1fr] items-center">
+              <div className="grid gap-10  items-center">
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Advantages of partnering with Transcure for NextGen software</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Advantages of partnering with Transcure for NextGen medical software</h2>
@@ -220,7 +171,7 @@ export default function NextGenPage() {
 
           <section className="py-16 bg-[#f4f6ff]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[0.95fr_1.05fr] items-center rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
+              <div className="grid gap-10  items-center rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Affordable revenue cycle management pricing</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Affordable revenue cycle management pricing</h2>

@@ -1,6 +1,6 @@
-﻿import React from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
 
 function Footer() {
   return (
@@ -20,10 +20,9 @@ function Footer() {
             <div>
               <h3 className="text-xl font-semibold mb-4 text-white">Resources</h3>
               <ul className="space-y-3">
-                <li><Link to="/blog" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Blog</Link></li>
-                <li><Link to="/resources/testimonials" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Testimonials</Link></li>
-                <li><Link to="/case-studies" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Case Studies</Link></li>
-                <li><Link to="/infographics" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Infographics</Link></li>
+                <li><Link to="/resources/blog" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Blog</Link></li>
+                <li><Link to="/resources/case-studies" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Case Studies</Link></li>
+                <li><Link to="/resources/infographics" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Infographics</Link></li>
               </ul>
             </div>
 
@@ -55,7 +54,7 @@ function Footer() {
             <div>
               <h3 className="text-xl font-semibold mb-4 text-white">Premium Services</h3>
               <ul className="space-y-3">
-                <li><Link to="/services/mips" className="text-white/80 hover:text-white hover:underline transition-all text-sm">MIPS Consulting Services</Link></li>
+                <li><Link to="/services/mips-consulting" className="text-white/80 hover:text-white hover:underline transition-all text-sm">MIPS Consulting Services</Link></li>
                 <li><Link to="/services/web-design" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Web Design & Development</Link></li>
                 <li><Link to="/services/software-dev" className="text-white/80 hover:text-white hover:underline transition-all text-sm">Healthcare Software Development Services</Link></li>
               </ul>
@@ -96,19 +95,11 @@ function Footer() {
                 <div>
                   <p className="text-white/80 text-sm mb-3">Our Locations</p>
                   
-                  <div className="flex items-start gap-3 mb-4">
-                    <MapPin className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-white/80">12100 Ford Rd b115, Farmers Branch, TX 75234</p>
-                  </div>
-                  
-                  <div className="flex items-start gap-3 mb-4">
-                    <MapPin className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-white/80">680 Amboy Ave, Woodbridge, NJ 07095</p>
-                  </div>
-                  
                   <div className="flex items-start gap-3 mb-6">
                     <MapPin className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-white/80">7269 Winding Lake Cir Circle, Oviedo, FL 32765, United States</p>
+                    <a href="https://maps.google.com/?q=1+Britton+Pl+Ste+6,+Voorhees+Township,+NJ+08043,+United+States" target="_blank" rel="noopener noreferrer" className="text-sm text-white/80 hover:text-white hover:underline">
+                      1 Britton Pl Ste 6, Voorhees Township, NJ 08043, United States
+                    </a>
                   </div>
                 </div>
 
@@ -117,7 +108,7 @@ function Footer() {
                   
                   <div className="flex items-center gap-3 mb-3">
                     <Phone className="w-5 h-5 text-white" />
-                    <a href="tel:+16097930400" className="text-sm text-white/80 hover:text-white hover:underline">+1 (609) 793-0400</a>
+                    <a href="tel:8009660515" className="text-sm text-white/80 hover:text-white hover:underline">(800) 966-0515</a>
                   </div>
                   
                   <div className="flex items-center gap-3 mb-6">
@@ -127,11 +118,11 @@ function Footer() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <a href="#" className="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-white/20 transition-colors">
-                    <Facebook className="w-4 h-4 text-white" />
-                  </a>
-                  <a href="#" className="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-white/20 transition-colors">
+                  <a href="https://www.linkedin.com/company/transmedex/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-white/20 transition-colors">
                     <Linkedin className="w-4 h-4 text-white" />
+                  </a>
+                  <a href="https://www.instagram.com/transmedex_official/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-white/20 transition-colors">
+                    <Instagram className="w-4 h-4 text-white" />
                   </a>
                 </div>
                 
@@ -157,9 +148,9 @@ function Footer() {
               &copy; {new Date().getFullYear()} TransMedex. All Rights Reserved.
             </p>
             <p className="text-sm text-white/80">
-              <Link to="/privacy-policy" className="hover:text-white hover:underline">Privacy Policy</Link>
+              <Link to="/resources/privacy-policy" className="hover:text-white hover:underline">Privacy Policy</Link>
               {' | '}
-              <Link to="/terms-of-service" className="hover:text-white hover:underline">Terms & Services</Link>
+              <Link to="/resources/terms-of-service" className="hover:text-white hover:underline">Terms & Services</Link>
             </p>
           </div>
         </div>

@@ -46,7 +46,6 @@ import HealthcareSEOPage from '@/pages/HealthcareSEOPage.jsx';
 import LaboratoryBillingPage from '@/pages/LaboratoryBillingPage.jsx';
 import MIPSConsultingPage from '@/pages/MIPSConsultingPage.jsx';
 import PatientBenefitsEligibilityPage from '@/pages/PatientBenefitsEligibilityPage.jsx';
-import AIAgentsPage from '@/pages/AIAgentsPage.jsx';
 import MedicalBillingCodingPage from '@/pages/MedicalBillingCodingPage.jsx';
 import EpicPage from '@/pages/EpicPage.jsx';
 import AthenahealthPage from '@/pages/AthenahealthPage.jsx';
@@ -56,7 +55,6 @@ import NextGenPage from '@/pages/NextGenPage.jsx';
 import CareCloudPage from '@/pages/CareCloudPage.jsx';
 import GenericPage from '@/pages/GenericPage.jsx';
 import CompanyPage from '@/pages/CompanyPage.jsx';
-import TestimonialsPage from '@/pages/TestimonialsPage.jsx';
 import PricingPage from '@/pages/PricingPage.jsx';
 import EMRMainPage from '@/pages/EMRMainPage.jsx';
 import StatesMainPage from '@/pages/StatesMainPage.jsx';
@@ -80,7 +78,6 @@ function App() {
         <Route path="/services/clearinghouse" element={<ClearinghousePage />} />
         <Route path="/services/medical-audit" element={<MedicalAuditPage />} />
         <Route path="/services/healthcare-seo" element={<HealthcareSEOPage />} />
-        <Route path="/services/ai-agents" element={<AIAgentsPage />} />
         <Route path="/services/medical-billing-coding" element={<MedicalBillingCodingPage />} />
         <Route path="/services/mips-consulting" element={<MIPSConsultingPage />} />
         <Route path="/services/laboratory-billing" element={<LaboratoryBillingPage />} />
@@ -133,8 +130,6 @@ function App() {
         <Route path="/who-we-serve/:slug" element={<GenericPage categoryOverride="who-we-serve" />} />
         
         <Route path="/resources/company" element={<CompanyPage />} />
-        <Route path="/resources/testimonials" element={<TestimonialsPage />} />
-        <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/resources/:slug" element={<GenericPage categoryOverride="resources" />} />
         
         {/* Catch-all 404 */}

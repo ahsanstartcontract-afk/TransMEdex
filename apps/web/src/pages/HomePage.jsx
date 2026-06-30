@@ -479,18 +479,7 @@ function HomePage() {
               ))}
             </motion.div>
 
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              {[
-                { icon: Star, label: 'Google 4.8', color: 'text-amber-500' },
-                { icon: Star, label: 'Trustpilot 4.8', color: 'text-amber-400' },
-                { icon: ShieldCheck, label: 'BBB A+ Rating', color: 'text-primary' },
-              ].map((badge, idx) => (
-                <div key={idx} className="flex items-center gap-3 rounded-3xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-950 shadow-sm hover-lift transition-all duration-300">
-                  <badge.icon className={`h-5 w-5 ${badge.color}`} />
-                  {badge.label}
-                </div>
-              ))}
-            </div>
+
           </div>
         </section>
 
@@ -609,13 +598,7 @@ function HomePage() {
                 </div>
               </div>
 
-              <div className="relative mt-10 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-                <input type="text" placeholder="Name" className="w-full rounded-3xl border border-white/20 bg-white/10 px-5 py-3.5 text-sm text-white placeholder-white/60 outline-none focus:bg-white/15 focus:border-white/40 focus:ring-2 focus:ring-white/10 transition-all duration-300" />
-                <input type="email" placeholder="Email" className="w-full rounded-3xl border border-white/20 bg-white/10 px-5 py-3.5 text-sm text-white placeholder-white/60 outline-none focus:bg-white/15 focus:border-white/40 focus:ring-2 focus:ring-white/10 transition-all duration-300" />
-                <input type="tel" placeholder="Phone Number" className="w-full rounded-3xl border border-white/20 bg-white/10 px-5 py-3.5 text-sm text-white placeholder-white/60 outline-none focus:bg-white/15 focus:border-white/40 focus:ring-2 focus:ring-white/10 transition-all duration-300" />
-              </div>
 
-              <Button className="relative mt-8 rounded-full bg-white px-8 py-4 text-base font-semibold text-[#0da1df] hover:bg-slate-100 hover:shadow-[0_12px_28px_-6px_rgba(255,255,255,0.2)] transition-all duration-300 border-none">Contact Us</Button>
             </motion.div>
           </div>
         </section>

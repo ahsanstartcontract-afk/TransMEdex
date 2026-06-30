@@ -56,7 +56,7 @@ export default function EpicPage() {
           <section className="relative overflow-hidden bg-gradient-to-br from-[#4f1774] via-[#7a2d94] to-[#54168f] text-white">
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_rgba(255,255,255,0.25),_transparent_40%)]" />
             <div className="max-w-7xl mx-auto px-4 py-20 sm:px-6 lg:px-8">
-              <div className="grid gap-10 xl:grid-cols-[1.35fr_0.85fr] items-start">
+              <div className="grid gap-10  items-start">
                 <div className="relative z-10">
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Epic EHR Billing</p>
                   <h1 className="mt-5 text-4xl font-bold sm:text-5xl lg:text-6xl">Epic Medical Billing Services</h1>
@@ -69,7 +69,7 @@ export default function EpicPage() {
                       <Link to="/contact">Request Epic Consult</Link>
                     </Button>
                     <Button asChild variant="outline" size="lg" className="bg-transparent rounded-full px-8 py-3 text-base font-semibold text-white border-white/20 hover:border-white/40 hover:bg-white hover:text-slate-900">
-                      <a href="tel:+16097930400">Call (609) 793-0400</a>
+                      <a href="tel:8009660515">Call (800) 966-0515</a>
                     </Button>
                   </div>
 
@@ -82,56 +82,14 @@ export default function EpicPage() {
                   </div>
                 </div>
 
-                <div className="relative z-10 rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur-xl sm:p-8">
-                  <div className="mb-6 text-center">
-                    <span className="inline-flex rounded-full bg-white/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Epic Billing Request</span>
-                  </div>
-                  <form onSubmit={handleSubmit} className="space-y-4 text-slate-900">
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <input
-                        name="firstName"
-                        value={form.firstName}
-                        onChange={handleChange}
-                        placeholder="First name"
-                        className="w-full rounded-3xl border border-slate-200 bg-white/90 px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                      <input
-                        name="lastName"
-                        value={form.lastName}
-                        onChange={handleChange}
-                        placeholder="Last name"
-                        className="w-full rounded-3xl border border-slate-200 bg-white/90 px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      <input
-                        name="email"
-                        type="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        placeholder="Email"
-                        className="w-full rounded-3xl border border-slate-200 bg-white/90 px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                      <input
-                        name="phone"
-                        value={form.phone}
-                        onChange={handleChange}
-                        placeholder="Phone"
-                        className="w-full rounded-3xl border border-slate-200 bg-white/90 px-4 py-3 text-sm outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/20"
-                      />
-                    </div>
-                    <Button type="submit" size="lg" className="w-full rounded-full bg-secondary text-secondary-foreground px-6 py-3 text-base font-semibold">
-                      Contact Us
-                    </Button>
-                  </form>
-                </div>
+                
               </div>
             </div>
           </section>
 
           <section className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-12 xl:grid-cols-[1.3fr_0.9fr] items-center">
+              <div className="grid gap-12  items-center">
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Epic Billing</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950 sm:text-4xl">What is Epic EHR and How Does Its Billing System Work?</h2>
@@ -293,7 +251,7 @@ export default function EpicPage() {
 
           <section className="py-20 bg-[#f8f5ff]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="grid gap-10 items-center xl:grid-cols-[0.95fr_1.05fr]">
+              <div className="grid gap-10 items-center ">
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Which specialties does TransMedex support with Epic billing?</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950 sm:text-4xl">Specialties supported in Epic medical billing</h2>

@@ -35,7 +35,7 @@ function PatientBenefitsEligibilityPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="max-w-5xl mx-auto">
                 <div className="backdrop-blur-sm bg-black/40 rounded-2xl p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+                  <div className="grid grid-cols-1 lg:grid-cols-1 gap-6 items-start">
                     <div>
                       <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Benefits & Eligibility Verification</h1>
                       <p className="text-lg opacity-90 mb-6">Real-time eligibility verification and benefits checking to confirm coverage, deductibles, copays, and coinsurance before patient visitsâ€”preventing claim denials and billing disputes.</p>
@@ -44,25 +44,12 @@ function PatientBenefitsEligibilityPage() {
                           <Link to="/contact">Contact Us</Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900">
-                          <a href="tel:+16097930400">Call (609) 793-0400</a>
+                          <a href="tel:8009660515">Call (800) 966-0515</a>
                         </Button>
                       </div>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="bg-white text-black rounded-xl p-6 shadow-lg">
-                      <div className="grid grid-cols-2 gap-3 mb-3">
-                        <input name="firstName" value={form.firstName} onChange={handleChange} placeholder="First name" className="col-span-1 p-3 border rounded" />
-                        <input name="lastName" value={form.lastName} onChange={handleChange} placeholder="Last name" className="col-span-1 p-3 border rounded" />
-                      </div>
-                      <div className="grid grid-cols-1 gap-3 mb-3">
-                        <input name="email" value={form.email} onChange={handleChange} placeholder="Email" className="p-3 border rounded" />
-                        <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="p-3 border rounded" />
-                      </div>
-                      <div className="flex gap-2">
-                        <Button type="submit" size="lg">Get demo</Button>
-                        <Button asChild size="lg" variant="outline"><Link to="/contact">More options</Link></Button>
-                      </div>
-                    </form>
+                    
                   </div>
                 </div>
               </motion.div>

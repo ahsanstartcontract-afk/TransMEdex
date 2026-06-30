@@ -44,25 +44,20 @@ function MedicalAuditPage() {
                           <Link to="/contact">Contact Us</Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900">
-                          <a href="tel:+16097930400">Call (609) 793-0400</a>
+                          <a href="tel:8009660515">Call (800) 966-0515</a>
                         </Button>
                       </div>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="bg-white text-black rounded-xl p-6 shadow-lg">
-                      <div className="grid grid-cols-2 gap-3 mb-3">
-                        <input name="firstName" value={form.firstName} onChange={handleChange} placeholder="First name" className="col-span-1 p-3 border rounded" />
-                        <input name="lastName" value={form.lastName} onChange={handleChange} placeholder="Last name" className="col-span-1 p-3 border rounded" />
-                      </div>
-                      <div className="grid grid-cols-1 gap-3 mb-3">
-                        <input name="email" value={form.email} onChange={handleChange} placeholder="Email" className="p-3 border rounded" />
-                        <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="p3 border rounded" />
-                      </div>
-                      <div className="flex gap-2">
-                        <Button type="submit" size="lg">Schedule audit</Button>
-                        <Button asChild size="lg" variant="outline"><Link to="/contact">More info</Link></Button>
-                      </div>
-                    </form>
+                    <div className="bg-white/10 rounded-2xl p-6 border border-white/20 backdrop-blur-md h-full flex flex-col justify-center">
+    <h3 className="text-2xl font-semibold mb-4 text-white">Comprehensive Auditing</h3>
+    <ul className="space-y-4 text-white/80 text-lg">
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Identify undercoding and overcoding risks</li>
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Ensure OIG and Medicare compliance</li>
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Detailed revenue leakage analysis</li>
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Actionable feedback for providers</li>
+    </ul>
+</div>
                   </div>
                 </div>
               </motion.div>

@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -27,31 +27,79 @@ function ContactPage() {
     numberOfPhysicians: '1',
     message: ''
   });
+  const [fieldErrors, setFieldErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [formTimestamp] = useState(Date.now());
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+    // Clear error for this field on change
+    if (fieldErrors[name]) {
+      setFieldErrors(prev => { const n = { ...prev }; delete n[name]; return n; });
+    }
   };
 
   const handleSelectChange = (value) => {
-    setFormData({
-      ...formData,
-      numberOfPhysicians: value
-    });
+    setFormData(prev => ({ ...prev, numberOfPhysicians: value }));
   };
 
-  const handleSubmit = (e) => {
+  // ── Client-side validation ──────────────────────────
+  const validate = () => {
+    const errs = {};
+    const { firstName, lastName, email, phone, practiceName, message } = formData;
+
+    if (!firstName.trim() || firstName.trim().length < 2) errs.firstName = 'First name is required (min 2 chars).';
+    if (!lastName.trim() || lastName.trim().length < 2) errs.lastName = 'Last name is required (min 2 chars).';
+
+    const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (!email.trim() || !emailRe.test(email.trim())) errs.email = 'A valid email address is required.';
+
+    const phoneRe = /^[\d\s()+\-.,]{7,20}$/;
+    if (!phone.trim() || !phoneRe.test(phone.trim())) errs.phone = 'A valid phone number is required.';
+
+    if (!practiceName.trim() || practiceName.trim().length < 2) errs.practiceName = 'Practice name is required (min 2 chars).';
+    if (!message.trim() || message.trim().length < 10) errs.message = 'Message must be at least 10 characters.';
+
+    return errs;
+  };
+
+  // ── Submit handler ──────────────────────────────────
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const errs = validate();
+    setFieldErrors(errs);
+    if (Object.keys(errs).length > 0) {
+      toast({ title: 'Validation Error', description: 'Please fix the highlighted fields.', variant: 'destructive' });
+      return;
+    }
+
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: 'Contact Us Scheduled',
-        description: 'Our experts will contact you shortly.'
+    try {
+      const payload = {
+        ...formData,
+        _form_ts: formTimestamp,       // anti-bot timestamp
+        _hp_website: '',               // honeypot — must stay empty
+      };
+
+      const res = await fetch('/hcgi/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
       });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        const errMsg = data.errors ? data.errors.join(' ') : (data.error || 'Something went wrong.');
+        toast({ title: 'Submission Failed', description: errMsg, variant: 'destructive' });
+        return;
+      }
+
+      setIsSuccess(true);
 
       setFormData({
         firstName: '',
@@ -62,8 +110,17 @@ function ContactPage() {
         numberOfPhysicians: '1',
         message: ''
       });
+      setFieldErrors({});
+
+    } catch (err) {
+      toast({
+        title: 'Network Error',
+        description: 'Could not reach our servers. Please try again or call us at (800) 966-0515.',
+        variant: 'destructive',
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const stats = [
@@ -113,31 +170,63 @@ function ContactPage() {
                     <p className="text-slate-600">Get connected with our experts.</p>
                   </div>
 
-                  <form onSubmit={handleSubmit} className="space-y-5">
-                    <div className="space-y-2">
+                  {isSuccess ? (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      className="flex flex-col items-center justify-center text-center py-12 space-y-4"
+                    >
+                      <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mb-2">
+                        <CheckCircle className="w-10 h-10 text-green-500" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-slate-900">Message Sent!</h3>
+                      <p className="text-slate-600 max-w-sm mx-auto">
+                        Thank you for contacting us. Our team will get back to you within 1 business day.
+                      </p>
+                      <Button 
+                        onClick={() => setIsSuccess(false)}
+                        className="mt-8 bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 font-semibold"
+                      >
+                        Send Another Message
+                      </Button>
+                    </motion.div>
+                  ) : (
+                  <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+                    {/* Honeypot field — hidden from humans, bots fill it */}
+                    <div style={{ position: 'absolute', left: '-9999px', opacity: 0, height: 0, overflow: 'hidden' }} aria-hidden="true">
+                      <label htmlFor="_hp_website">Website</label>
+                      <input type="text" id="_hp_website" name="_hp_website" tabIndex={-1} autoComplete="off" />
+                    </div>
+
+                    <div className="space-y-1">
                       <Label htmlFor="firstName" className="text-slate-700 font-medium">First Name <span className="text-red-500">*</span></Label>
-                      <Input id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required className="border-slate-300" />
+                      <Input id="firstName" name="firstName" autoComplete="given-name" value={formData.firstName} onChange={handleChange} className={fieldErrors.firstName ? 'border-red-500' : 'border-slate-300'} />
+                      {fieldErrors.firstName && <p className="text-red-500 text-xs mt-1">{fieldErrors.firstName}</p>}
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <Label htmlFor="lastName" className="text-slate-700 font-medium">Last Name <span className="text-red-500">*</span></Label>
-                      <Input id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required className="border-slate-300" />
+                      <Input id="lastName" name="lastName" autoComplete="family-name" value={formData.lastName} onChange={handleChange} className={fieldErrors.lastName ? 'border-red-500' : 'border-slate-300'} />
+                      {fieldErrors.lastName && <p className="text-red-500 text-xs mt-1">{fieldErrors.lastName}</p>}
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <Label htmlFor="email" className="text-slate-700 font-medium">Email <span className="text-red-500">*</span></Label>
-                      <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required className="border-slate-300" />
+                      <Input id="email" name="email" type="email" autoComplete="email" value={formData.email} onChange={handleChange} className={fieldErrors.email ? 'border-red-500' : 'border-slate-300'} />
+                      {fieldErrors.email && <p className="text-red-500 text-xs mt-1">{fieldErrors.email}</p>}
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <Label htmlFor="phone" className="text-slate-700 font-medium">Phone <span className="text-red-500">*</span></Label>
-                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} required className="border-slate-300" />
+                      <Input id="phone" name="phone" type="tel" autoComplete="tel" value={formData.phone} onChange={handleChange} className={fieldErrors.phone ? 'border-red-500' : 'border-slate-300'} />
+                      {fieldErrors.phone && <p className="text-red-500 text-xs mt-1">{fieldErrors.phone}</p>}
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <Label htmlFor="practiceName" className="text-slate-700 font-medium">Practice Name <span className="text-red-500">*</span></Label>
-                      <Input id="practiceName" name="practiceName" value={formData.practiceName} onChange={handleChange} required className="border-slate-300" />
+                      <Input id="practiceName" name="practiceName" autoComplete="organization" value={formData.practiceName} onChange={handleChange} className={fieldErrors.practiceName ? 'border-red-500' : 'border-slate-300'} />
+                      {fieldErrors.practiceName && <p className="text-red-500 text-xs mt-1">{fieldErrors.practiceName}</p>}
                     </div>
                     <div className="space-y-2">
-                      <Label className="text-slate-700 font-medium">Number of Physicians <span className="text-red-500">*</span></Label>
-                      <Select value={formData.numberOfPhysicians} onValueChange={handleSelectChange}>
-                        <SelectTrigger className="border-slate-300">
+                      <Label htmlFor="numberOfPhysicians" className="text-slate-700 font-medium">Number of Physicians <span className="text-red-500">*</span></Label>
+                      <Select value={formData.numberOfPhysicians} onValueChange={handleSelectChange} name="numberOfPhysicians" autoComplete="off">
+                        <SelectTrigger id="numberOfPhysicians" className="border-slate-300">
                           <SelectValue placeholder="Select" />
                         </SelectTrigger>
                         <SelectContent>
@@ -148,9 +237,10 @@ function ContactPage() {
                         </SelectContent>
                       </Select>
                     </div>
-                    <div className="space-y-2">
+                    <div className="space-y-1">
                       <Label htmlFor="message" className="text-slate-700 font-medium">Message <span className="text-red-500">*</span></Label>
-                      <Textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={4} required className="border-slate-300" />
+                      <Textarea id="message" name="message" autoComplete="off" value={formData.message} onChange={handleChange} rows={4} className={fieldErrors.message ? 'border-red-500' : 'border-slate-300'} />
+                      {fieldErrors.message && <p className="text-red-500 text-xs mt-1">{fieldErrors.message}</p>}
                     </div>
                     
                     <div className="pt-2 flex justify-center">
@@ -159,10 +249,11 @@ function ContactPage() {
                         disabled={isSubmitting}
                         className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 text-sm font-semibold transition-colors"
                       >
-                        {isSubmitting ? 'Scheduling...' : 'Contact Us'}
+                        {isSubmitting ? 'Sending...' : 'Contact Us'}
                       </Button>
                     </div>
                   </form>
+                  )}
                 </motion.div>
 
                 {/* Right Content */}
@@ -190,7 +281,7 @@ function ContactPage() {
                   </ul>
 
                   <p className="text-slate-800 font-semibold text-lg">
-                    Talk to our experts at <span className="text-slate-900">+1 ( 609 ) 793-0400</span>
+                    Talk to our experts at <span className="text-slate-900">(800) 966-0515</span>
                   </p>
                 </motion.div>
 

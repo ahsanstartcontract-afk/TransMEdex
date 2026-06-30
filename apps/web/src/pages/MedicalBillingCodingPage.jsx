@@ -169,17 +169,15 @@ function MedicalBillingCodingPage() {
                   <p className="mt-4 text-slate-600 leading-7">
                     Request a detailed review of your current coding accuracy and let our experts identify the highest-impact improvements to reduce denials and boost revenue.
                   </p>
-                  <form onSubmit={handleSubmit} className="mt-8 space-y-4">
-                    <div className="grid gap-3 sm:grid-cols-2">
-                      <input name="firstName" value={form.firstName} onChange={handleChange} placeholder="First name" className="rounded-3xl border border-slate-200 bg-slate-100 px-4 py-3 text-sm outline-none" />
-                      <input name="lastName" value={form.lastName} onChange={handleChange} placeholder="Last name" className="rounded-3xl border border-slate-200 bg-slate-100 px-4 py-3 text-sm outline-none" />
-                    </div>
-                    <div className="grid gap-3">
-                      <input name="email" value={form.email} onChange={handleChange} placeholder="Email" className="rounded-3xl border border-slate-200 bg-slate-100 px-4 py-3 text-sm outline-none" />
-                      <input name="phone" value={form.phone} onChange={handleChange} placeholder="Phone" className="rounded-3xl border border-slate-200 bg-slate-100 px-4 py-3 text-sm outline-none" />
-                    </div>
-                    <Button type="submit" size="lg" className="w-full rounded-full bg-primary text-primary-foreground">Request coding audit</Button>
-                  </form>
+                  <div className="bg-white/10 rounded-2xl p-6 border border-white/20 backdrop-blur-md h-full flex flex-col justify-center">
+    <h3 className="text-2xl font-semibold mb-4 text-white">Certified Coding Excellence</h3>
+    <ul className="space-y-4 text-white/80 text-lg">
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> AAPC & AHIMA certified coders</li>
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> ICD-10, CPT, and HCPCS mastery</li>
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Regular documentation reviews</li>
+        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Specialties-specific coding rules applied</li>
+    </ul>
+</div>
                 </div>
               </div>
             </div>
