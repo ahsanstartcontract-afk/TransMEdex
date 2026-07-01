@@ -30,24 +30,28 @@ import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext
 
 const services = [
   {
-    title: 'Medical Billing Contact Us',
+    title: 'Medical Billing Services',
     description: 'Expert patient billers offer the most complete medical billing services that entail handling check-in/out, claims, payments, and denials for health care providers.',
     icon: ClipboardCheck,
+    path: '/services/medical-billing',
   },
   {
     title: 'Medical Coding',
     description: 'Clinical coding officers translate patient services into ICD-10 and CPT codes and generate a clean "super-bill" for the biller to submit to the insurance payer.',
     icon: ShieldCheck,
+    path: '/services/medical-coding',
   },
   {
     title: 'Provider Credentialing',
     description: 'Provider enrollment services by our credentialing specialists help healthcare providers join the network of desirable payors with maximum privileges.',
     icon: Shield,
+    path: '/services/provider-credentialing',
   },
   {
     title: 'Healthcare RCM',
     description: 'Revenue cycle management services are specialty-specific, which means a physician\'s bespoke demands are met by a dedicated medical biller.',
     icon: TrendingUp,
+    path: '/services/healthcare-rcm',
   },
 ];
 
@@ -339,14 +343,16 @@ function HomePage() {
                 const Icon = service.icon;
                 return (
                   <motion.div key={idx} variants={fadeInUp}>
-                    <div className="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm h-full hover-lift hover:border-primary/20 transition-all duration-300">
-                      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 text-primary group-hover:from-primary group-hover:to-[#591667] group-hover:text-white transition-all duration-300">
-                        <Icon className="h-6 w-6" />
+                    <Link to={service.path} className="block h-full">
+                      <div className="group rounded-[1.75rem] border border-slate-200 bg-white p-6 shadow-sm h-full hover-lift hover:border-primary/20 transition-all duration-300 flex flex-col">
+                        <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 text-primary group-hover:from-primary group-hover:to-[#591667] group-hover:text-white transition-all duration-300 flex-shrink-0">
+                          <Icon className="h-6 w-6" />
+                        </div>
+                        <h3 className="text-lg font-semibold text-slate-950">{service.title}</h3>
+                        <p className="mt-3 text-sm leading-6 text-slate-600 flex-grow">{service.description}</p>
+                        <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all duration-300">Explore More <ArrowRight className="h-4 w-4" /></div>
                       </div>
-                      <h3 className="text-lg font-semibold text-slate-950">{service.title}</h3>
-                      <p className="mt-3 text-sm leading-6 text-slate-600">{service.description}</p>
-                      <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:gap-3 transition-all duration-300">Explore More <ArrowRight className="h-4 w-4" /></div>
-                    </div>
+                    </Link>
                   </motion.div>
                 );
               })}
@@ -420,9 +426,7 @@ function HomePage() {
                   ))}
                 </motion.div>
 
-                <motion.div variants={fadeInUp}>
-                  <Button className="rounded-full bg-white px-8 py-4 text-base font-semibold text-[#0da1df] hover:bg-slate-100 hover:shadow-[0_12px_28px_-6px_rgba(255,255,255,0.2)] transition-all duration-300 border-none">Contact Us</Button>
-                </motion.div>
+
               </motion.div>
 
               <motion.div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl shadow-black/20" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
@@ -534,7 +538,7 @@ function HomePage() {
                   <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200">Patient's insurance coverage verification on the spot. HIPAA-compliant medical billing services for data safety. 24/7 medical billing services to handle every claim submission. 98% claim reimbursement rate for healthy cash flow.</p>
                 </div>
                 <div className="space-y-4">
-                  <Button className="rounded-full bg-white px-8 py-4 text-base font-semibold text-[#0da1df] hover:bg-slate-100 hover:shadow-lg transition-all duration-300 border-none">Book a demo</Button>
+
                   <div className="grid gap-3 rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-slate-200">
                     {['Billing Software', 'Denial Management', 'Accounts Management', '1:1 Technical Support'].map((item, idx) => (
                       <div key={idx} className="flex items-center gap-3"><CheckCircle className="h-4 w-4 text-white" /><span>{item}</span></div>

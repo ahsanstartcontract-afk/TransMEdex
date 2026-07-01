@@ -308,7 +308,7 @@ function Header() {
               </DropdownNav>
 
               {/* Resources */}
-              <DropdownNav label="Resources" to="/resources" dropdownWidth="w-[240px]" alignClass="-left-4">
+              <DropdownNav label="Resources" to="#" dropdownWidth="w-[240px]" alignClass="-left-4">
                 <div className="p-2 flex flex-col gap-1">
                   {resources.map((r) => (
                     <Link
@@ -338,11 +338,11 @@ function Header() {
 
             {/* CTA Button */}
             <div className="hidden xl:flex items-center gap-4 xl:gap-6 flex-shrink-0 relative z-10">
-              <a href="tel:8009660515" className="group flex items-center gap-2 text-[14px] font-semibold text-slate-600 hover:text-[#0da1df] transition-colors">
+              <a href="tel:+16097930400" className="group flex items-center gap-2 text-[14px] font-semibold text-slate-600 hover:text-[#0da1df] transition-colors">
                 <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-[#0da1df]/10 transition-colors">
                   <Phone className="w-3.5 h-3.5 text-[#0da1df]" />
                 </div>
-                (800) 966-0515
+                +1 (609) 793-0400
               </a>
               <Button asChild className="premium-button-primary shadow-[0_0_15px_rgba(13,161,223,0.5)] animate-[pulse_2s_ease-in-out_infinite] hover:shadow-[0_0_25px_rgba(13,161,223,0.8)]">
                 <Link to="/contact">Contact Us</Link>
@@ -417,9 +417,9 @@ function Header() {
                     </Link>
 
                     <div className="mt-8 pt-8 border-t border-slate-100 flex flex-col gap-4">
-                      <a href="tel:8009660515" className="flex items-center justify-center gap-2 text-slate-600 font-semibold text-[15px] bg-slate-50 py-3 rounded-xl hover:bg-slate-100 transition-colors">
+                      <a href="tel:+16097930400" className="flex items-center justify-center gap-2 text-slate-600 font-semibold text-[15px] bg-slate-50 py-3 rounded-xl hover:bg-slate-100 transition-colors">
                         <Phone className="w-4 h-4 text-[#0da1df]" />
-                        (800) 966-0515
+                        +1 (609) 793-0400
                       </a>
                       <Button asChild className="premium-button-primary w-full h-12 text-base shadow-[0_0_15px_rgba(13,161,223,0.5)] animate-[pulse_2s_ease-in-out_infinite] hover:shadow-[0_0_25px_rgba(13,161,223,0.8)]">
                         <Link to="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>

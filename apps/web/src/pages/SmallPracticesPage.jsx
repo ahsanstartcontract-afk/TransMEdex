@@ -125,6 +125,7 @@ function SmallPracticesPage() {
       pageTitle="Medical Billing for Small Practices"
       seoDescription="Affordable, expert medical billing services tailored for solo practitioners and small medical practices. Improve cash flow with Transcure."
       heroTitle="Empowering Small Practices with Expert Medical Billing"
+      heroImage="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Big-practice resources and technology, personalized for your small clinic."
       heroFeatures={heroFeatures}
       mainContentTitle="Focus on Your Patients, We'll Focus on Your Payments"

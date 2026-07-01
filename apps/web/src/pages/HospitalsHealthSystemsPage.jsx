@@ -125,6 +125,7 @@ function HospitalsHealthSystemsPage() {
       pageTitle="Billing for Hospitals & Health Systems"
       seoDescription="Enterprise-grade medical billing and RCM services for hospitals and health systems. Scale your revenue cycle operations with Transcure."
       heroTitle="Enterprise RCM Solutions for Hospitals & Health Systems"
+      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Maximize revenue, ensure compliance, and scale efficiently with our enterprise billing services."
       heroFeatures={heroFeatures}
       mainContentTitle="Transform Your Health System's Financial Performance"

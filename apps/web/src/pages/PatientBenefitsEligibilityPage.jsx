@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -39,12 +39,12 @@ function PatientBenefitsEligibilityPage() {
                     <div>
                       <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Benefits & Eligibility Verification</h1>
                       <p className="text-lg opacity-90 mb-6">Real-time eligibility verification and benefits checking to confirm coverage, deductibles, copays, and coinsurance before patient visitsâ€”preventing claim denials and billing disputes.</p>
-                      <div className="flex gap-3">
+                      <div className="flex flex-col sm:flex-row gap-3">
                         <Button asChild size="lg" className="bg-primary text-primary-foreground">
                           <Link to="/contact">Contact Us</Link>
                         </Button>
                         <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900">
-                          <a href="tel:8009660515">Call (800) 966-0515</a>
+                          <a href="tel:+16097930400">Call +1 (609) 793-0400</a>
                         </Button>
                       </div>
                     </div>
@@ -201,7 +201,7 @@ function PatientBenefitsEligibilityPage() {
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl font-bold mb-4">Reduce Denials & Improve Collections with Eligibility Verification</h2>
               <p className="mb-6 text-muted-foreground">Request a demo of our real-time eligibility platform or Contact Us to see how we can reduce your denial rate.</p>
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg"><Link to="/contact">Request platform demo</Link></Button>
                 <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900"><Link to="/contact">Schedule call</Link></Button>
               </div>

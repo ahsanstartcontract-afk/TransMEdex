@@ -115,7 +115,7 @@ function ContactPage() {
     } catch (err) {
       toast({
         title: 'Network Error',
-        description: 'Could not reach our servers. Please try again or call us at (800) 966-0515.',
+        description: 'Could not reach our servers. Please try again or call us at +1 (609) 793-0400.',
         variant: 'destructive',
       });
     } finally {
@@ -281,7 +281,7 @@ function ContactPage() {
                   </ul>
 
                   <p className="text-slate-800 font-semibold text-lg">
-                    Talk to our experts at <span className="text-slate-900">(800) 966-0515</span>
+                    Talk to our experts at <span className="text-slate-900">+1 (609) 793-0400</span>
                   </p>
                 </motion.div>
 

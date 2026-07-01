@@ -125,6 +125,7 @@ function MedicalGroupPracticesPage() {
       pageTitle="Medical Group Practices Billing Services"
       seoDescription="Enhance your medical group practice's billing process with Transcure. Super-fast claim submission, advanced payment posting, and clean claim submissions."
       heroTitle="Enhance Billing Process of Medical Group Practices"
+      heroImage="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Streamline medical billing and get timely payments."
       heroFeatures={heroFeatures}
       mainContentTitle="Enhance Operational Efficiency with Hospital Billing Company"

@@ -125,6 +125,7 @@ function IndependentPracticesPage() {
       pageTitle="Medical Billing for Independent Practices"
       seoDescription="Expert medical billing and RCM services for independent medical practices. Maintain your autonomy and boost your revenue with Transcure."
       heroTitle="Empowering Independent Practices with Expert Billing"
+      heroImage="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Secure your financial independence with our comprehensive revenue cycle management."
       heroFeatures={heroFeatures}
       mainContentTitle="Stay Independent, Stay Profitable"

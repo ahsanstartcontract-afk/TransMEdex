@@ -125,6 +125,7 @@ function OutsourceBillingServicesPage() {
       pageTitle="Outsource Medical Billing Services"
       seoDescription="Outsource your medical billing to Transcure. Reduce costs, accelerate revenue, and ensure compliance with our expert billing teams."
       heroTitle="Transform Your Practice by Outsourcing Medical Billing"
+      heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Let the experts handle your revenue cycle while you focus on patient care."
       heroFeatures={heroFeatures}
       mainContentTitle="The Strategic Advantage of Outsourced Billing"

@@ -6,8 +6,8 @@ function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#0f172a] to-[#1e293b] text-white pt-16 pb-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-6 xl:gap-8">
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-6 xl:gap-8">
+
           {/* Column 1: About Us & Resources */}
           <div className="space-y-8">
             <div>
@@ -108,7 +108,7 @@ function Footer() {
                   
                   <div className="flex items-center gap-3 mb-3">
                     <Phone className="w-5 h-5 text-white" />
-                    <a href="tel:8009660515" className="text-sm text-white/80 hover:text-white hover:underline">(800) 966-0515</a>
+                    <a href="tel:+16097930400" className="text-sm text-white/80 hover:text-white hover:underline">+1 (609) 793-0400</a>
                   </div>
                   
                   <div className="flex items-center gap-3 mb-6">
@@ -135,7 +135,7 @@ function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-white/20 flex flex-col items-center justify-center gap-4">
+        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/20 flex flex-col items-center justify-center gap-3 sm:gap-4">
           <Link to="/" className="inline-block">
             <img 
               src="https://horizons-cdn.hostinger.com/7a432855-cd07-4bff-aa05-d1970751b6de/a27dc909893ded6711ddc4a601441ec9.png" 
@@ -143,14 +143,14 @@ function Footer() {
               className="h-10 brightness-0 invert" 
             />
           </Link>
-          <div className="text-center">
-            <p className="text-sm text-white/80 mb-1">
+          <div className="text-center px-4">
+            <p className="text-xs sm:text-sm text-white/80 mb-1">
               &copy; {new Date().getFullYear()} TransMedex. All Rights Reserved.
             </p>
-            <p className="text-sm text-white/80">
+            <p className="text-xs sm:text-sm text-white/80 flex flex-wrap justify-center gap-1">
               <Link to="/resources/privacy-policy" className="hover:text-white hover:underline">Privacy Policy</Link>
-              {' | '}
-              <Link to="/resources/terms-of-service" className="hover:text-white hover:underline">Terms & Services</Link>
+              <span>|</span>
+              <Link to="/resources/terms-of-service" className="hover:text-white hover:underline">Terms &amp; Services</Link>
             </p>
           </div>
         </div>

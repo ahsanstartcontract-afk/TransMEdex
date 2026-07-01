@@ -69,7 +69,7 @@ export default function EpicPage() {
                       <Link to="/contact">Request Epic Consult</Link>
                     </Button>
                     <Button asChild variant="outline" size="lg" className="bg-transparent rounded-full px-8 py-3 text-base font-semibold text-white border-white/20 hover:border-white/40 hover:bg-white hover:text-slate-900">
-                      <a href="tel:8009660515">Call (800) 966-0515</a>
+                      <a href="tel:+16097930400">Call +1 (609) 793-0400</a>
                     </Button>
                   </div>
 

@@ -59,7 +59,6 @@ import PricingPage from '@/pages/PricingPage.jsx';
 import EMRMainPage from '@/pages/EMRMainPage.jsx';
 import StatesMainPage from '@/pages/StatesMainPage.jsx';
 import WhoWeServeMainPage from '@/pages/WhoWeServeMainPage.jsx';
-import ResourcesMainPage from '@/pages/ResourcesMainPage.jsx';
 
 function App() {
   return (
@@ -105,7 +104,6 @@ function App() {
         <Route path="/emr" element={<EMRMainPage />} />
         <Route path="/states" element={<StatesMainPage />} />
         <Route path="/who-we-serve" element={<WhoWeServeMainPage />} />
-        <Route path="/resources" element={<ResourcesMainPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/services/:slug" element={<GenericPage categoryOverride="services" />} />
 

@@ -358,7 +358,7 @@ export default function SpecialtyTemplate() {
                 Contact Us
               </Button>
               <Button variant="outline" className="border-2 border-white text-white px-8 py-6 text-lg rounded-full hover:bg-white/10 bg-transparent">
-                Call (800) 966-0515
+                Call +1 (609) 793-0400
               </Button>
             </div>
           </div>
