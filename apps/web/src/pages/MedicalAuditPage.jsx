@@ -17,7 +17,7 @@ function MedicalAuditPage() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   return (
@@ -50,14 +50,14 @@ function MedicalAuditPage() {
                     </div>
 
                     <div className="bg-white/10 rounded-2xl p-6 border border-white/20 backdrop-blur-md h-full flex flex-col justify-center">
-    <h3 className="text-2xl font-semibold mb-4 text-white">Comprehensive Auditing</h3>
-    <ul className="space-y-4 text-white/80 text-lg">
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Identify undercoding and overcoding risks</li>
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Ensure OIG and Medicare compliance</li>
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Detailed revenue leakage analysis</li>
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Actionable feedback for providers</li>
-    </ul>
-</div>
+                      <h3 className="text-2xl font-semibold mb-4 text-white">Comprehensive Auditing</h3>
+                      <ul className="space-y-4 text-white/80 text-lg">
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Identify undercoding and overcoding risks</li>
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Ensure OIG and Medicare compliance</li>
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Detailed revenue leakage analysis</li>
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Actionable feedback for providers</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -69,7 +69,7 @@ function MedicalAuditPage() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <div className="col-span-2">
                   <h2 className="text-3xl font-bold mb-4">Proactive Billing Audits Prevent Costly Issues</h2>
-                  <p className="text-muted-foreground mb-6">We conduct comprehensive audits of your coding accuracy, documentation completeness, billing processes, and compliance protocols. Each audit identifies specific revenue leaks, denial patterns, and regulatory risksâ€”with actionable recommendations to address findings before external auditors or payers conduct investigations.</p>
+                  <p className="text-muted-foreground mb-6">We conduct comprehensive audits of your coding accuracy, documentation completeness, billing processes, and compliance protocols. Each audit identifies specific revenue leaks, denial patterns, and regulatory risks—with actionable recommendations to address findings before external auditors or payers conduct investigations.</p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="p-4 border rounded-lg">
                       <h3 className="font-semibold mb-2">Coding Accuracy Audits</h3>
@@ -133,7 +133,7 @@ function MedicalAuditPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h3 className="text-xl font-semibold mb-6 text-center">Specialty-Specific Audit Expertise</h3>
               <div className="grid grid-cols-2 md:grid-cols-6 gap-4 items-center">
-                {['Orthopedics','Cardiology','Behavioral Health','Primary Care','Urgent Care','Surgery'].map((name)=> (
+                {['Orthopedics', 'Cardiology', 'Behavioral Health', 'Primary Care', 'Urgent Care', 'Surgery'].map((name) => (
                   <div key={name} className="flex items-center justify-center p-4 border rounded-md bg-background text-sm text-muted-foreground">
                     {name}
                   </div>
@@ -142,31 +142,6 @@ function MedicalAuditPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">Medical Audit Results & Impact</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'Gregory Holmes', role: 'Hospital Director of Compliance', quote: 'Audit identified $267K in missed revenue from coding errors. Prevented future denials through corrective action plan.' , initials: 'GH'
-                },{
-                  name: 'Vanessa Torres', role: 'Practice CFO', quote: 'Comprehensive audit provided roadmap for billing process improvements. Collections increased 22% post-implementation.',initials: 'VT'
-                },{
-                  name: 'Michael Johnson', role: 'Clinic Manager', quote: 'Documentation gaps identified and corrected before payer audit. Risk mitigated, staff training implemented.' , initials: 'MJ'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">"{t.quote}"</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

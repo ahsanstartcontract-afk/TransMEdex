@@ -56,9 +56,8 @@ import CareCloudPage from '@/pages/CareCloudPage.jsx';
 import GenericPage from '@/pages/GenericPage.jsx';
 import CompanyPage from '@/pages/CompanyPage.jsx';
 import PricingPage from '@/pages/PricingPage.jsx';
-import EMRMainPage from '@/pages/EMRMainPage.jsx';
+import EHRMainPage from '@/pages/EHRMainPage.jsx';
 import StatesMainPage from '@/pages/StatesMainPage.jsx';
-import WhoWeServeMainPage from '@/pages/WhoWeServeMainPage.jsx';
 
 function App() {
   return (
@@ -101,9 +100,8 @@ function App() {
         <Route path="/specialties/urgent-care" element={<UrgentCarePage />} />
         <Route path="/specialties/urology" element={<UrologyPage />} />
         <Route path="/specialties/:slug" element={<SpecialtyTemplate />} />
-        <Route path="/emr" element={<EMRMainPage />} />
+        <Route path="/emr" element={<EHRMainPage />} />
         <Route path="/states" element={<StatesMainPage />} />
-        <Route path="/who-we-serve" element={<WhoWeServeMainPage />} />
         <Route path="/pricing" element={<PricingPage />} />
         <Route path="/services/:slug" element={<GenericPage categoryOverride="services" />} />
 

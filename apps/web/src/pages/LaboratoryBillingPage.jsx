@@ -17,7 +17,7 @@ function LaboratoryBillingPage() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   return (
@@ -50,14 +50,14 @@ function LaboratoryBillingPage() {
                     </div>
 
                     <div className="bg-white/10 rounded-2xl p-6 border border-white/20 backdrop-blur-md h-full flex flex-col justify-center">
-    <h3 className="text-2xl font-semibold mb-4 text-white">Laboratory Billing Expertise</h3>
-    <ul className="space-y-4 text-white/80 text-lg">
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Accurate CPT coding for lab tests</li>
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Fast turnaround for high-volume claims</li>
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Managing complex prior authorizations</li>
-        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Seamless LIS integration</li>
-    </ul>
-</div>
+                      <h3 className="text-2xl font-semibold mb-4 text-white">Laboratory Billing Expertise</h3>
+                      <ul className="space-y-4 text-white/80 text-lg">
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Accurate CPT coding for lab tests</li>
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Fast turnaround for high-volume claims</li>
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Managing complex prior authorizations</li>
+                        <li className="flex items-start gap-3"><span className="text-primary font-bold">✓</span> Seamless LIS integration</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </motion.div>
@@ -131,7 +131,7 @@ function LaboratoryBillingPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h3 className="text-xl font-semibold mb-6 text-center">CAP/CLIA Compliance & Certifications</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-center">
-                {['CAP Certification','CLIA Compliant','Medicare Approved','State Licensed'].map((name)=> (
+                {['CAP Certification', 'CLIA Compliant', 'Medicare Approved', 'State Licensed'].map((name) => (
                   <div key={name} className="flex items-center justify-center p-4 border rounded-md bg-background text-sm text-muted-foreground">
                     {name}
                   </div>
@@ -140,31 +140,6 @@ function LaboratoryBillingPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">Laboratory Billing Success Stories</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'Dr. Robert Adams', role: 'Reference Lab Director', quote: 'Reimbursement increased 31% within 6 months. Expert coding prevented thousands in missed revenue.' , initials: 'RA'
-                },{
-                  name: 'Jennifer Wright', role: 'Hospital Lab Manager', quote: 'Complex genetic panel coding now optimized. Compliance with LCD requirements ensures zero denials.',initials: 'JW'
-                },{
-                  name: 'Kevin Martinez', role: 'Pathology Practice Owner', quote: 'Coding accuracy improved dramatically. ABN issues eliminated through proper medical necessity documentation.' , initials: 'KM'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">"{t.quote}"</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -16,7 +16,7 @@ function MIPSConsultingPage() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   return (
@@ -139,31 +139,6 @@ function MIPSConsultingPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">MIPS Success with TransMedex</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'Dr. Kevin Walsh', role: 'Primary Care Practice Owner', quote: 'MIPS score increased from 52 to 89. Avoided payment penalty and earned incentive bonus.' , initials: 'KW'
-                },{
-                  name: 'Jennifer Lopez', role: 'Practice Compliance Officer', quote: 'Clear roadmap for MIPS compliance. Expert guidance on measure selection and reporting.',initials: 'JL'
-                },{
-                  name: 'Marcus Thompson', role: 'Cardiology Practice CFO', quote: 'Transparent pricing, reliable reporting, and proactive CMS communication. Excellent partner.' , initials: 'MT'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">&quot;{t.quote}&quot;</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

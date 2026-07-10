@@ -22,7 +22,7 @@ export default function ICANotesPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('ICANotes Contact Us request:', form);
-    alert('Thank you â€” your ICANotes Contact Us request has been received.');
+    alert('Thank you — your ICANotes Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 

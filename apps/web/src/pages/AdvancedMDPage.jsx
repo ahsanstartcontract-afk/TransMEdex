@@ -23,7 +23,7 @@ export default function AdvancedMDPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('AdvancedMD Contact Us request:', form);
-    alert('Thank you â€” your AdvancedMD Contact Us request has been received.');
+    alert('Thank you — your AdvancedMD Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '', message: '' });
   };
 
@@ -83,7 +83,7 @@ export default function AdvancedMDPage() {
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">AdvancedMD Medical Billing Services</p>
                   <h1 className="mt-4 text-4xl font-bold tracking-[-0.03em] sm:text-5xl lg:text-6xl">AdvancedMD Medical Billing Services | Certified Coders + Billers Inside Your AdvancedMD Plan</h1>
                   <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">
-                    AdvancedMD practices can increase cash flow and reduce denials when they use TransMedexâ€™s experts built inside AdvancedMD workflows for coding, patient posting, and appeals.
+                    AdvancedMD practices can increase cash flow and reduce denials when they use TransMedex's experts built inside AdvancedMD workflows for coding, patient posting, and appeals.
                   </p>
 
                   <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -199,8 +199,8 @@ export default function AdvancedMDPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
                 <div className="space-y-4">
-                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">How does Transcureâ€™s AdvancedMD billing services onboard your practice?</p>
-                  <h2 className="text-3xl font-bold text-slate-950">How does Transcureâ€™s AdvancedMD billing services onboard your practice?</h2>
+                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">How does Transcure's AdvancedMD billing services onboard your practice?</p>
+                  <h2 className="text-3xl font-bold text-slate-950">How does Transcure's AdvancedMD billing services onboard your practice?</h2>
                   <p className="text-slate-600">Transcure uses a structured, fast onboarding process for AdvancedMD practices so your team can move from go-live risk to clean claim stability.</p>
                 </div>
 
@@ -252,7 +252,7 @@ export default function AdvancedMDPage() {
                   <div>
                     <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Certifications behind every AdvancedMD account</p>
                     <h2 className="mt-4 text-3xl font-bold text-slate-950">Certifications behind every AdvancedMD account</h2>
-                    <p className="mt-4 text-slate-600">Transcureâ€™s AdvancedMD team combines ISO 27001, HIPAA, and HITRUST-ready controls with certified medical billing and coding expertise.</p>
+                    <p className="mt-4 text-slate-600">Transcure's AdvancedMD team combines ISO 27001, HIPAA, and HITRUST-ready controls with certified medical billing and coding expertise.</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     <div className="rounded-[2rem] border border-slate-200 bg-white p-6 text-center">
@@ -301,8 +301,8 @@ export default function AdvancedMDPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 shadow-sm">
                 <div className="space-y-4">
-                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Should you use AdvancedMDâ€™s own RCM service or outsource to Transcure?</p>
-                  <h2 className="text-3xl font-bold text-slate-950">Should you use AdvancedMDâ€™s own RCM service or outsource to Transcure?</h2>
+                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Should you use AdvancedMD's own RCM service or outsource to Transcure?</p>
+                  <h2 className="text-3xl font-bold text-slate-950">Should you use AdvancedMD's own RCM service or outsource to Transcure?</h2>
                   <p className="text-slate-600">Most AdvancedMD practices improve speed, accuracy, and revenue recovery by outsourcing to a billing partner with deep AdvancedMD expertise.</p>
                 </div>
 
@@ -386,8 +386,8 @@ export default function AdvancedMDPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid gap-10  items-center rounded-[2rem] border border-slate-200 bg-[#f4f6ff] p-10 shadow-sm">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Your AdvancedMD billing doesnâ€™t stop when your biller does</p>
-                  <h2 className="mt-4 text-3xl font-bold text-slate-950">Your AdvancedMD billing doesnâ€™t stop when your biller does</h2>
+                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Your AdvancedMD billing doesn't stop when your biller does</p>
+                  <h2 className="mt-4 text-3xl font-bold text-slate-950">Your AdvancedMD billing doesn't stop when your biller does</h2>
                   <p className="mt-5 text-slate-600">Transcure keeps revenue moving with ongoing AdvancedMD claim monitoring, denial follow-up, and clean claim support beyond the initial implementation.</p>
                   <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                     <Button asChild className="rounded-full bg-primary px-8 py-3 text-base font-semibold text-primary-foreground hover:bg-primary/90">

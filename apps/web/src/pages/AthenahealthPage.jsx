@@ -23,7 +23,7 @@ export default function AthenahealthPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Athenahealth Contact Us request:', form);
-    alert('Thank you â€” your Athenahealth Contact Us request has been received.');
+    alert('Thank you — your Athenahealth Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '', message: '' });
   };
 
@@ -205,8 +205,8 @@ export default function AthenahealthPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
                 <div className="space-y-4">
-                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">What is included in TransMedexâ€™s Athena Billing Services?</p>
-                  <h2 className="text-3xl font-bold text-slate-950">What is included in TransMedexâ€™s Athena Billing Services?</h2>
+                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">What is included in TransMedex's Athena Billing Services?</p>
+                  <h2 className="text-3xl font-bold text-slate-950">What is included in TransMedex's Athena Billing Services?</h2>
                   <p className="text-slate-600">TransMedex provides Athena billing services that improve claim quality, reduce denials, and simplify payment reconciliation.</p>
                 </div>
 
@@ -276,8 +276,8 @@ export default function AthenahealthPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
                 <div className="space-y-4">
-                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Should you use Athenahealthâ€™s own billing services or outsource to TransMedex?</p>
-                  <h2 className="text-3xl font-bold text-slate-950">Should you use Athenahealthâ€™s own billing services or outsource to TransMedex?</h2>
+                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Should you use Athenahealth's own billing services or outsource to TransMedex?</p>
+                  <h2 className="text-3xl font-bold text-slate-950">Should you use Athenahealth's own billing services or outsource to TransMedex?</h2>
                   <p className="text-slate-600">Most practices succeed faster by outsourcing Athena billing to a specialized partner who understands the platform, workflows, and payer rules.</p>
                 </div>
 

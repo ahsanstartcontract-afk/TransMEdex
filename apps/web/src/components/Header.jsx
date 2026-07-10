@@ -253,8 +253,8 @@ function Header() {
                 </div>
               </DropdownNav>
 
-              {/* EMR */}
-              <DropdownNav label="EMR" to="/emr" dropdownWidth="w-[240px]">
+              {/* EHR */}
+              <DropdownNav label="EHR" to="/emr" dropdownWidth="w-[240px]">
                 <div className="p-2 flex flex-col gap-1">
                   {emrs.map((e) => (
                     <Link
@@ -289,8 +289,8 @@ function Header() {
                 </div>
               </DropdownNav>
 
-              {/* Who We Serve */}
-              <DropdownNav label="Who We Serve" to="/who-we-serve" dropdownWidth="w-[300px]" alignClass="-left-4">
+              {/* Our Clients */}
+              <DropdownNav label="Our Clients" to="#" dropdownWidth="w-[300px]" alignClass="-left-4">
                 <div className="p-2 flex flex-col gap-1">
                   {whoWeServe.map((w) => (
                     <Link
@@ -385,9 +385,9 @@ function Header() {
 
                     <MobileNavGroup label="Services" items={services} />
                     <MobileNavGroup label="Specialties" items={specialties} />
-                    <MobileNavGroup label="EMR" items={emrs} />
+                    <MobileNavGroup label="EHR" items={emrs} />
                     <MobileNavGroup label="States We Serve" items={states} />
-                    <MobileNavGroup label="Who We Serve" items={whoWeServe} />
+                    <MobileNavGroup label="Our Clients" items={whoWeServe} />
                     <MobileNavGroup label="Resources" items={resources} />
 
                     <Link

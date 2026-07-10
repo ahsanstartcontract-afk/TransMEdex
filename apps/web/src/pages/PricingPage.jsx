@@ -345,7 +345,7 @@ function PricingPage() {
             <div className="md:col-span-7 bg-slate-50 p-5 sm:p-8 rounded-[2rem] border border-slate-100 relative">
               <div className="absolute -top-4 -left-4 text-6xl text-[#0da1df]/20 font-serif leading-none">"</div>
               <p className="text-slate-600 text-lg leading-relaxed mb-8 relative z-10 font-medium italic">
-                TransMedex truly saved my practice. Their expert billing support significantly reduced claim denials, improved cash flow, and allowed me to focus on what matters mostâ€”patient care. I genuinely feel more confident and in control.
+                TransMedex truly saved my practice. Their expert billing support significantly reduced claim denials, improved cash flow, and allowed me to focus on what matters most—patient care. I genuinely feel more confident and in control.
               </p>
               <div className="border-t border-slate-200 pt-6 flex items-center justify-between">
                 <div>

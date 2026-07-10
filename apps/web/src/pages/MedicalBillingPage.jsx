@@ -18,7 +18,7 @@ function MedicalBillingPage() {
     e.preventDefault();
     // replace with real submission logic later
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   const benefits = [
@@ -175,7 +175,7 @@ function MedicalBillingPage() {
             <section className="py-12 bg-white">
               <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 className="text-3xl font-bold mb-4">Free Medical Billing Audit</h2>
-                <p className="mb-6 text-muted-foreground">Request a complimentary audit â€” weâ€™ll review 30 claims and identify missed revenue opportunities and coding issues.</p>
+                <p className="mb-6 text-muted-foreground">Request a complimentary audit — we'll review 30 claims and identify missed revenue opportunities and coding issues.</p>
                 <Button asChild size="lg"><Link to="/contact">Claim your free audit</Link></Button>
               </div>
             </section>
@@ -301,34 +301,6 @@ function MedicalBillingPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">Trusted by healthcare providers</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'Jackie Judd', role: 'Practice Manager', quote: 'Their team delivered measurable improvement to our AR and reduced denials through targeted remediation.' , initials: 'JJ'
-                },{
-                  name: 'Amber Vaughan', role: 'Clinic Director', quote: 'Clear operational ownership, timely reporting, and a collaborative transition process.', initials: 'AV'
-                },{
-                  name: 'Ashlee Roca', role: 'Billing Lead', quote: 'The structured denial playbook and appeals support materially improved our cashflow.', initials: 'AR'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">"{t.quote}"</p>
-                    <div className="mt-6">
-                      <Button asChild variant="outline"><Link to="/contact">Schedule a call</Link></Button>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -355,15 +327,15 @@ function MedicalBillingPage() {
               <div className="space-y-3">
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">Are you HIPAA compliant?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">Yes â€” we follow HIPAA best practices and use secure, encrypted systems for PHI.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Yes — we follow HIPAA best practices and use secure, encrypted systems for PHI.</p>
                 </details>
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">How long does onboarding take?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">Typical onboarding is 2â€“6 weeks depending on practice size and EHR integration needs.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Typical onboarding is 2–6 weeks depending on practice size and EHR integration needs.</p>
                 </details>
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">Do you support specialty practices?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">Yes â€” we work across many specialties including cardiology, orthopedics, urology, and behavioral health.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Yes — we work across many specialties including cardiology, orthopedics, urology, and behavioral health.</p>
                 </details>
               </div>
             </div>

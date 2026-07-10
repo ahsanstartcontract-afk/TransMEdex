@@ -44,7 +44,7 @@ function CompanyPage() {
     },
     {
       question: 'How does TransMedex charge for medical billing services?',
-      answer: 'TransMedex operates on a transparent, performance-based model â€” typically a percentage of monthly collections (starting at 5%). There are no setup fees, no hidden charges, and no long-term lock-in contracts. You only pay when you get paid.'
+      answer: 'TransMedex operates on a transparent, performance-based model — typically a percentage of monthly collections (starting at 5%). There are no setup fees, no hidden charges, and no long-term lock-in contracts. You only pay when you get paid.'
     },
     {
       question: 'Can TransMedex integrate with my existing EMR or practice management system?',

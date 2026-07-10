@@ -199,7 +199,7 @@ function HomePage() {
                     The Medical Billing Service <span className="gradient-text">Provider for</span> <span className="text-slate-950">USA Healthcare</span>
                   </h1>
                   <p className="max-w-xl text-lg leading-8 text-slate-600">
-                    TransMedex is the USA's top medical billing firm â€“ deploying the best practices in medical billing and coding for physicians looking to outsource billing and coding to an expert 3rd party billing agency.
+                    TransMedex is the USA's top medical billing firm – deploying the best practices in medical billing and coding for physicians looking to outsource billing and coding to an expert 3rd party billing agency.
                   </p>
                   <p className="max-w-xl text-lg leading-8 text-slate-600">
                     Our certified medical coders and billers help healthcare organizations recover Aged Receivables and resolve insurance Claim Denials, as well.
@@ -216,7 +216,7 @@ function HomePage() {
 
               </motion.div>
 
-              {/* Right â€” Hero Image */}
+              {/* Right — Hero Image */}
               <motion.div className="relative" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}>
                 <div className="absolute -right-16 top-10 h-[440px] w-[440px] rounded-full bg-gradient-to-br from-primary/25 to-[#591667]/10 blur-3xl animate-pulse-glow" />
                 <div className="relative overflow-hidden rounded-[1.25rem] border border-white/40 glass-card p-3 shadow-2xl shadow-primary/10">
@@ -408,7 +408,7 @@ function HomePage() {
                 <motion.p variants={fadeInUp} className="text-sm uppercase tracking-[0.32em] text-white/50">Medical Claims Billing Service.</motion.p>
                 <motion.h2 variants={fadeInUp} className="text-3xl sm:text-4xl font-bold tracking-[-0.03em]">We boost healthcare income with quick, uncut reimbursements!</motion.h2>
                 <motion.div variants={fadeInUp} className="space-y-4 text-slate-300">
-                  <p>Management of billing claims poses difficulties for providers pursuing timely submissions and full remittance for care given. But take heart â€” our niche medical billing services ease the way.</p>
+                  <p>Management of billing claims poses difficulties for providers pursuing timely submissions and full remittance for care given. But take heart — our niche medical billing services ease the way.</p>
                   <p>We optimize each invoicing phase, armed with clinical knowledge and zeal for first-class claims processing. Cloud tech validates a patient's insurance eligibility right away and file claims electronically to quicken payments.</p>
                 </motion.div>
 

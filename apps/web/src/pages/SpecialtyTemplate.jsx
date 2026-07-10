@@ -20,7 +20,7 @@ const specialtyData = {
     ],
     faqs: [
       { q: 'How do you handle implant/device charges?', a: 'We track implants and devices at charge capture, reconcile with OR logs, and bill using payer-specific rules to maximize recovery.' },
-      { q: 'Can you support tele-urology visits?', a: 'Yes â€” we manage telehealth coding, modifiers, and payer policies to ensure compliant submission.' }
+      { q: 'Can you support tele-urology visits?', a: 'Yes — we manage telehealth coding, modifiers, and payer policies to ensure compliant submission.' }
     ],
     challenges: [
       'Complex procedure and endoscopy coding',
@@ -45,7 +45,7 @@ const specialtyData = {
       'Denial prevention through clinical documentation improvement'
     ],
     faqs: [
-      { q: 'Do you handle cath lab coding?', a: 'Yes â€” our coders have cath lab experience and apply appropriate modifiers and exception rules.' }
+      { q: 'Do you handle cath lab coding?', a: 'Yes — our coders have cath lab experience and apply appropriate modifiers and exception rules.' }
     ],
     challenges: [
       'Device and implant charge capture',
@@ -94,7 +94,7 @@ const specialtyData = {
       'Payer pricing optimization and bundles handling'
     ],
     faqs: [
-      { q: 'Can you bill complex molecular tests?', a: 'Yes â€” we handle panels, component pricing, and payer negotiation for higher-value molecular testing.' }
+      { q: 'Can you bill complex molecular tests?', a: 'Yes — we handle panels, component pricing, and payer negotiation for higher-value molecular testing.' }
     ],
     challenges: [
       'Panel and component billing complexity',
@@ -118,7 +118,7 @@ const specialtyData = {
       'Behavioral health credentialing and payer setup'
     ],
     faqs: [
-      { q: 'Do you support teletherapy billing?', a: 'Yes â€” including place-of-service, telehealth modifiers, and state-specific rules.' }
+      { q: 'Do you support teletherapy billing?', a: 'Yes — including place-of-service, telehealth modifiers, and state-specific rules.' }
     ],
     challenges: [
       'Telehealth and remote service coding',
@@ -166,7 +166,7 @@ const specialtyData = {
       'Denial management for high-frequency services'
     ],
     faqs: [
-      { q: 'Do you handle injection and procedure coding?', a: 'Yes â€” we code injections, nerve blocks, and interventional procedures with specialty-trained coders.' }
+      { q: 'Do you handle injection and procedure coding?', a: 'Yes — we code injections, nerve blocks, and interventional procedures with specialty-trained coders.' }
     ],
     challenges: ['High visit frequency', 'Authorization for chronic therapies', 'Procedure-level denials'],
     solutions: ['Pre-auth workflows', 'Procedure-specific coding templates', 'Focused denial appeal workflows'],
@@ -177,7 +177,7 @@ const specialtyData = {
     description: 'Billing support for nephrology covering dialysis, transplant follow-up, and complex labs associated with kidney care.',
     image: '/images/specialties/nephrology.svg',
     steps: ['Dialysis claim optimization', 'Transplant follow-up billing', 'Lab panel coordination'],
-    faqs: [{ q: 'Can you bill dialysis services?', a: 'Yes â€” we optimize bundled payments, modifiers, and facility vs professional rules.' }],
+    faqs: [{ q: 'Can you bill dialysis services?', a: 'Yes — we optimize bundled payments, modifiers, and facility vs professional rules.' }],
     challenges: ['Complex dialysis bundles', 'Multi-provider visit coordination'],
     solutions: ['Bundle mapping', 'Cross-provider claim coordination'],
     procedures: ['Dialysis sessions', 'Transplant follow-ups']
@@ -187,7 +187,7 @@ const specialtyData = {
     description: 'Ambulatory surgery center billing including facility fees, implant billing, and physician/facility carve-outs.',
     image: '/images/specialties/asc-billing.svg',
     steps: ['Facility vs professional split billing', 'Implant reconciliation', 'Payer-specific ASC rules'],
-    faqs: [{ q: 'Do you support ASC billing workflows?', a: 'Yes â€” we manage ASC-specific coding, reimbursement optimization, and implant capture.' }],
+    faqs: [{ q: 'Do you support ASC billing workflows?', a: 'Yes — we manage ASC-specific coding, reimbursement optimization, and implant capture.' }],
     challenges: ['Facility/professional splits', 'Implant charge capture'],
     solutions: ['ASC-native workflows', 'Implant reconciliation'],
     procedures: ['Same-day surgery', 'Minor procedures']
@@ -197,7 +197,7 @@ const specialtyData = {
     description: 'Neurology billing for complex diagnostics, EEG/EMG procedures, and chronic neurology therapy visits.',
     image: '/images/specialties/neurology.svg',
     steps: ['Procedure-level coding for diagnostics', 'Authorization for high-cost testing'],
-    faqs: [{ q: 'Can you code EEG/EMG claims?', a: 'Yes â€” our coders are familiar with neurology-specific test codes and bundling rules.' }],
+    faqs: [{ q: 'Can you code EEG/EMG claims?', a: 'Yes — our coders are familiar with neurology-specific test codes and bundling rules.' }],
     challenges: ['High-cost diagnostics', 'Complex test mapping'],
     solutions: ['Diagnostic coding specialists', 'Pre-auth coordination'],
     procedures: ['EEG', 'EMG', 'Neuro consults']
@@ -207,7 +207,7 @@ const specialtyData = {
     description: 'Oncology billing managing chemotherapy infusion coding, oral oncolytics, and site-of-care payment differences.',
     image: '/images/specialties/oncology.svg',
     steps: ['Infusion & drug administration coding', 'Oral agent billing workflows', 'Site-of-care reconciliation'],
-    faqs: [{ q: 'Do you handle chemotherapy infusion coding?', a: 'Yes â€” including J-codes, drug mapping, and infusion-related services.' }],
+    faqs: [{ q: 'Do you handle chemotherapy infusion coding?', a: 'Yes — including J-codes, drug mapping, and infusion-related services.' }],
     challenges: ['High-cost drug billing', 'Site-of-care payment variance'],
     solutions: ['Drug mapping and reimbursement checks', 'Infusion documentation workflows'],
     procedures: ['Chemotherapy infusion', 'Oncology consults']
@@ -217,7 +217,7 @@ const specialtyData = {
     description: 'Gastroenterology billing for endoscopy, colonoscopy, and complex procedural bundles with pathology correlation.',
     image: '/images/specialties/gastroenterology.svg',
     steps: ['Endoscopy coding and pathology linkage', 'Polypectomy and modifier management'],
-    faqs: [{ q: 'Can you handle colonoscopy coding with pathology?', a: 'Yes â€” we reconcile pathology and procedure claims for accurate reimbursement.' }],
+    faqs: [{ q: 'Can you handle colonoscopy coding with pathology?', a: 'Yes — we reconcile pathology and procedure claims for accurate reimbursement.' }],
     challenges: ['Pathology linkage', 'Polypectomy coding nuances'],
     solutions: ['Procedure-pathology reconciliation', 'Specialty coding templates'],
     procedures: ['Colonoscopy', 'Endoscopy']
@@ -227,7 +227,7 @@ const specialtyData = {
     description: 'Podiatry billing covering minor procedures, wound care, and orthotics documentation.',
     image: '/images/specialties/podiatry.svg',
     steps: ['Wound care billing', 'Orthotic and supply coding'],
-    faqs: [{ q: 'Do you support orthotic billing?', a: 'Yes â€” including modifiers and durable medical equipment coordination.' }],
+    faqs: [{ q: 'Do you support orthotic billing?', a: 'Yes — including modifiers and durable medical equipment coordination.' }],
     challenges: ['Supply/orthotic coding', 'Wound care bundles'],
     solutions: ['Supply mapping', 'Wound care billing workflows'],
     procedures: ['Wound care', 'Minor procedures']
@@ -237,7 +237,7 @@ const specialtyData = {
     description: 'Dental billing integration with medical billing for medically-necessary oral services and anesthesia.',
     image: '/images/specialties/dental.svg',
     steps: ['Coordination of medical vs dental coverage', 'Anesthesia and surgical oral coding'],
-    faqs: [{ q: 'Can you bill medically-necessary dental procedures?', a: 'Yes â€” we coordinate medical billing for covered dental services.' }],
+    faqs: [{ q: 'Can you bill medically-necessary dental procedures?', a: 'Yes — we coordinate medical billing for covered dental services.' }],
     challenges: ['Medical vs dental payer rules'],
     solutions: ['Cross-coverage workflows'],
     procedures: ['Oral surgery', 'Anesthesia']
@@ -247,7 +247,7 @@ const specialtyData = {
     description: 'Pediatrics billing focusing on immunizations, well-child visits, and complex pediatric procedures.',
     image: '/images/specialties/pediatrics.svg',
     steps: ['Immunization capture and billing', 'Age-specific coding templates'],
-    faqs: [{ q: 'Do you manage pediatric immunization claims?', a: 'Yes â€” including vaccine administration and inventory reconciliation.' }],
+    faqs: [{ q: 'Do you manage pediatric immunization claims?', a: 'Yes — including vaccine administration and inventory reconciliation.' }],
     challenges: ['Vaccine inventory & coding'],
     solutions: ['Immunization workflows and reconciliation'],
     procedures: ['Well-child visits', 'Immunizations']
@@ -257,7 +257,7 @@ const specialtyData = {
     description: 'OBGYN billing for prenatal care, deliveries, and gynecological procedures with global period and bundle management.',
     image: '/images/specialties/obgyn.svg',
     steps: ['Prenatal visit bundles', 'Delivery and postpartum coding', 'Gynecologic procedure billing'],
-    faqs: [{ q: 'Do you handle delivery global period billing?', a: 'Yes â€” we manage global period rules and postpartum follow-up claims.' }],
+    faqs: [{ q: 'Do you handle delivery global period billing?', a: 'Yes — we manage global period rules and postpartum follow-up claims.' }],
     challenges: ['Global periods and modifiers'],
     solutions: ['Global period management and documentation review'],
     procedures: ['Prenatal care', 'Delivery', 'Gynecologic procedures']
@@ -272,7 +272,7 @@ const specialtyData = {
       'School and payer-specific coordination'
     ],
     faqs: [
-      { q: 'Can you handle school-based billing?', a: 'Yes â€” we support mixed funding sources and school-based claim requirements.' }
+      { q: 'Can you handle school-based billing?', a: 'Yes — we support mixed funding sources and school-based claim requirements.' }
     ],
     challenges: [
       'Session documentation and time-based codes',
@@ -296,7 +296,7 @@ const specialtyData = {
       'Consolidated reporting for employers'
     ],
     faqs: [
-      { q: 'Do you produce employer reports?', a: 'Yes â€” customizable consolidated invoices and reports for employer clients.' }
+      { q: 'Do you produce employer reports?', a: 'Yes — customizable consolidated invoices and reports for employer clients.' }
     ],
     challenges: [
       'Employer invoicing and billing frequency',

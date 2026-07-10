@@ -61,10 +61,10 @@ function Footer() {
             </div>
           </div>
 
-          {/* Column 3: EMRs/EHRs & Book Appointment */}
+          {/* Column 3: EHRs/EHRs & Book Appointment */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4 text-white">EMRs / EHRs</h3>
+              <h3 className="text-xl font-semibold mb-4 text-white">EHRs / EHRs</h3>
               <ul className="space-y-3">
                 <li><Link to="/emr/eclinicalworks" className="text-white/80 hover:text-white hover:underline transition-all text-sm">eClinicalWorks</Link></li>
                 <li><Link to="/emr/advancedmd" className="text-white/80 hover:text-white hover:underline transition-all text-sm">AdvancedMD</Link></li>
@@ -125,10 +125,6 @@ function Footer() {
                     <Instagram className="w-4 h-4 text-white" />
                   </a>
                 </div>
-                
-                <div className="mt-6">
-                  <img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=b5f7e7f7-b2f9-4b66-b3a6-b9b218f8e285" alt="DMCA.com Protection Status" className="h-6" />
-                </div>
               </div>
             </div>
           </div>
@@ -140,7 +136,7 @@ function Footer() {
             <img 
               src="https://horizons-cdn.hostinger.com/7a432855-cd07-4bff-aa05-d1970751b6de/a27dc909893ded6711ddc4a601441ec9.png" 
               alt="TransMedex" 
-              className="h-10 brightness-0 invert" 
+              className="h-10" 
             />
           </Link>
           <div className="text-center px-4">

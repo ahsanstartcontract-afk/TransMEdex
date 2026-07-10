@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
@@ -10,37 +10,37 @@ const specialties = [
   {
     name: 'Urology',
     description: 'Patient-friendly procedural billing and device tracking.',
-    image: 'https://images.unsplash.com/photo-1580281657525-48b7aa395f20?auto=format&fit=crop&w=900&q=80',
+    image: '/urology-specialty.png',
     link: '/specialties/urology'
   },
   {
     name: 'Cardiology',
     description: 'High-value cardiology claims with cath lab expertise.',
-    image: 'https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=900&q=80',
+    image: '/cardiology-specialty.png',
     link: '/specialties/cardiology'
   },
   {
     name: 'Orthopedics',
     description: 'Surgical and rehab billing that keeps episodes aligned.',
-    image: 'https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&w=900&q=80',
+    image: '/orthopedics-specialty.png',
     link: '/specialties/orthopedics'
   },
   {
     name: 'Behavioral Health',
     description: 'Telehealth and therapy claims handled with precision.',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80',
+    image: '/behavioral-health-specialty.png',
     link: '/specialties/behavioral-health'
   },
   {
     name: 'Laboratory Billing',
     description: 'Panel and specimen billing optimized for every lab.',
-    image: 'https://images.unsplash.com/photo-1581092160621-580afe3f5ca8?auto=format&fit=crop&w=900&q=80',
+    image: '/laboratory-billing-specialty.png',
     link: '/specialties/laboratory-billing'
   },
   {
     name: 'Urgent Care',
     description: 'Fast, accurate billing for high-volume urgent care visits.',
-    image: 'https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80',
+    image: 'https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&cs=tinysrgb&w=900',
     link: '/specialties/urgent-care'
   }
 ];
@@ -49,17 +49,17 @@ const features = [
   {
     title: 'Clear specialty workflows',
     description: 'We map each specialty to its distinct billing rules and payer expectations.',
-    image: 'https://images.unsplash.com/photo-1581093448791-2f5b9160b3bf?auto=format&fit=crop&w=900&q=80'
+    image: '/specialty-workflows.png'
   },
   {
     title: 'Visual claim intelligence',
     description: 'Integrated reporting and analytics make claims easier to review and act on.',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80'
+    image: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=900'
   },
   {
     title: 'Revenue optimization',
     description: 'We reduce denials and increase collections with clean claim submission.',
-    image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=80'
+    image: 'https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=900'
   }
 ];
 

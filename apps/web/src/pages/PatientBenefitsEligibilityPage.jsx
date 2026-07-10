@@ -17,7 +17,7 @@ function PatientBenefitsEligibilityPage() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   return (
@@ -38,7 +38,7 @@ function PatientBenefitsEligibilityPage() {
                   <div className="grid grid-cols-1 lg:grid-cols-1 gap-6 items-start">
                     <div>
                       <h1 className="text-4xl md:text-5xl font-bold mb-4">Patient Benefits & Eligibility Verification</h1>
-                      <p className="text-lg opacity-90 mb-6">Real-time eligibility verification and benefits checking to confirm coverage, deductibles, copays, and coinsurance before patient visitsâ€”preventing claim denials and billing disputes.</p>
+                      <p className="text-lg opacity-90 mb-6">Real-time eligibility verification and benefits checking to confirm coverage, deductibles, copays, and coinsurance before patient visits—preventing claim denials and billing disputes.</p>
                       <div className="flex flex-col sm:flex-row gap-3">
                         <Button asChild size="lg" className="bg-primary text-primary-foreground">
                           <Link to="/contact">Contact Us</Link>
@@ -132,31 +132,6 @@ function PatientBenefitsEligibilityPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">Patient Eligibility Success Stories</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'Maria Santos', role: 'Hospital Billing Manager', quote: 'Reduced eligibility-related claim denials by 80%. Same-day patient responsibility collection improved collection rates.' , initials: 'MS'
-                },{
-                  name: 'David Park', role: 'Clinic Operations Director', quote: 'Real-time benefits verification streamlined our front desk workflow. Better patient communication and satisfaction.',initials: 'DP'
-                },{
-                  name: 'Susan Miller', role: 'Revenue Cycle Director', quote: 'Fewer claim rejections and better upfront collections. Measurable impact on cash flow and DSO.' , initials: 'SM'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">"{t.quote}"</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -191,7 +166,7 @@ function PatientBenefitsEligibilityPage() {
                 </details>
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">Does verification prevent all denials?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">Eligibility verification prevents 80â€“87% of denial reasons. Combined with accurate coding and billing, it eliminates most preventable denials.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Eligibility verification prevents 80–87% of denial reasons. Combined with accurate coding and billing, it eliminates most preventable denials.</p>
                 </details>
               </div>
             </div>

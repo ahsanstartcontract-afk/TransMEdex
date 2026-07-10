@@ -14,7 +14,7 @@ export default function CareCloudPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('CareCloud Contact Us request:', form);
-    alert('Thank you â€” your CareCloud Contact Us request has been received.');
+    alert('Thank you — your CareCloud Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 
@@ -75,7 +75,7 @@ export default function CareCloudPage() {
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">CareCloud EHR Support</p>
                   <h1 className="mt-4 text-4xl font-bold sm:text-5xl lg:text-6xl">Customized RCM Solutions for CareCloud EHR Software Users</h1>
                   <p className="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl">
-                    TransMedex delivers flexible CareCloud revenue cycle management that is built around your practiceâ€™s workflow, so you can recover revenue faster and reduce operational friction.
+                    TransMedex delivers flexible CareCloud revenue cycle management that is built around your practice's workflow, so you can recover revenue faster and reduce operational friction.
                   </p>
 
                   <div className="mt-10 grid gap-4 sm:grid-cols-2">
@@ -137,7 +137,7 @@ export default function CareCloudPage() {
                 {serviceTabs.map((tab) => (
                   <div key={tab.key} className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
                     <h3 className="text-xl font-semibold text-slate-950">{tab.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-slate-600">Flexible CareCloud solutions for your practiceâ€™s revenue cycle and operational needs.</p>
+                    <p className="mt-3 text-sm leading-6 text-slate-600">Flexible CareCloud solutions for your practice's revenue cycle and operational needs.</p>
                   </div>
                 ))}
               </div>
@@ -149,8 +149,8 @@ export default function CareCloudPage() {
               <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 shadow-sm">
                 <div className="grid gap-8  items-start">
                   <div>
-                    <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Transcureâ€™s Advantage</p>
-                    <h2 className="mt-4 text-3xl font-bold text-slate-950">Transcureâ€™s Advantage</h2>
+                    <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Transcure's Advantage</p>
+                    <h2 className="mt-4 text-3xl font-bold text-slate-950">Transcure's Advantage</h2>
                     <p className="mt-4 text-slate-600">Our team knows the workflows of CareCloud clinical and revenue cycle users, and we deliver outcome-focused support to maximize reimbursements.</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">

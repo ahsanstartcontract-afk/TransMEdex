@@ -17,7 +17,7 @@ function MedicalCodingPage() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   return (
@@ -136,7 +136,7 @@ function MedicalCodingPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h3 className="text-xl font-semibold mb-6 text-center">EHR & Billing System Integration</h3>
               <div className="grid grid-cols-2 md:grid-cols-6 gap-4 items-center">
-                {['eClinicalWorks','Athenahealth','NextGen','Epic','Cerner','Allscripts'].map((name)=> (
+                {['eClinicalWorks', 'Athenahealth', 'NextGen', 'Epic', 'Cerner', 'Allscripts'].map((name) => (
                   <div key={name} className="flex items-center justify-center p-4 border rounded-md bg-background text-sm text-muted-foreground">
                     {name}
                   </div>
@@ -145,31 +145,6 @@ function MedicalCodingPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">Trusted by Healthcare Leaders</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'Dr. Robert Chen', role: 'Orthopedic Practice Director', quote: 'The coding accuracy improvements directly impacted our revenue cycle. Denials dropped 40% within 90 days.' , initials: 'RC'
-                },{
-                  name: 'Lisa Morrison', role: 'Cardiology Admin Manager', quote: 'Professional and detail-oriented. Our modifier accuracy improved substantially, reducing appeals.', initials: 'LM'
-                },{
-                  name: 'Michael Torres', role: 'Clinic Operations Lead', quote: 'Excellent training support and responsive to guideline updates. Highly professional team.', initials: 'MT'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">"{t.quote}"</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

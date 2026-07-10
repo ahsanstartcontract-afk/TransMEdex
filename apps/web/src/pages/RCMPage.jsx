@@ -17,7 +17,7 @@ function RCMPage() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('Contact Us request:', form);
-    alert('Thanks â€” we received your request.');
+    alert('Thanks — we received your request.');
   }
 
   return (
@@ -148,31 +148,6 @@ function RCMPage() {
             </div>
           </section>
 
-          <section className="py-16 bg-[#eef0ff]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <h3 className="text-3xl font-bold mb-10 text-center text-slate-950">Trusted by Healthcare Organizations</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {[{
-                  name: 'David Foster', role: 'Practice CFO', quote: 'DSO dropped from 58 to 28 days in 6 months. The financial impact was immediate and measurable.' , initials: 'DF'
-                },{
-                  name: 'Maria Garcia', role: 'Operations Director', quote: 'Comprehensive reporting gave us visibility into cash flow bottlenecks. Game-changer for our practice.', initials: 'MG'
-                },{
-                  name: 'James Wilson', role: 'Finance Manager', quote: 'Exceptional support team and continuous optimization of our RCM workflows. Highly satisfied.', initials: 'JW'
-                }].map((t, i) => (
-                  <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                    <div className="flex items-center gap-4 mb-6">
-                      <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">{t.initials}</div>
-                      <div>
-                        <div className="font-semibold text-slate-900">{t.name}</div>
-                        <div className="text-sm text-slate-500">{t.role}</div>
-                      </div>
-                    </div>
-                    <p className="text-slate-600 italic leading-relaxed">"{t.quote}"</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
 
           <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -199,15 +174,15 @@ function RCMPage() {
               <div className="space-y-3">
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">How long does RCM optimization take?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">Typically 60â€“90 days for full integration and optimization. Quick wins (claim scrubbing, appeals) show results within 30 days.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Typically 60–90 days for full integration and optimization. Quick wins (claim scrubbing, appeals) show results within 30 days.</p>
                 </details>
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">What is Days Sales Outstanding (DSO)?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">DSO measures the average time between service delivery and payment receipt. Lower DSO = faster cash flow. We aim to reduce DSO by 30â€“40%.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">DSO measures the average time between service delivery and payment receipt. Lower DSO = faster cash flow. We aim to reduce DSO by 30–40%.</p>
                 </details>
                 <details className="p-4 border rounded-lg">
                   <summary className="font-semibold">Can you manage multiple practices simultaneously?</summary>
-                  <p className="mt-2 text-sm text-muted-foreground">Yes â€” we manage multi-location practices and health networks, with centralized reporting and customized workflows per location.</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Yes — we manage multi-location practices and health networks, with centralized reporting and customized workflows per location.</p>
                 </details>
               </div>
             </div>

@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, ClipboardCheck, BarChart3, Users, Bolt, Layers } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function NextGenPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('NextGen Contact Us request:', form);
-    alert('Thank you â€” your NextGen Contact Us request has been received.');
+    alert('Thank you — your NextGen Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 
@@ -32,7 +32,7 @@ export default function NextGenPage() {
   const offerings = [
     { title: 'Medical Billing Services', description: 'Transcure supports NextGen with medical billing workflows that improve collections, reduce denials, and keep cash flow consistent.' },
     { title: 'NextGen RCM', description: 'Our RCM team delivers claim scrubbing, scheduling reconciliation, patient posting, and payer follow-up inside NextGen.' },
-    { title: 'NextGen Services', description: 'We also provide advanced practice management services that align your revenue cycle with NextGenâ€™s system workflows.' },
+    { title: 'NextGen Services', description: 'We also provide advanced practice management services that align your revenue cycle with NextGen\'s system workflows.' },
   ];
 
   const benefits = [
@@ -154,7 +154,7 @@ export default function NextGenPage() {
                   <div>
                     <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Our success in numbers</p>
                     <h2 className="mt-4 text-3xl font-bold text-slate-950">Our success in numbers</h2>
-                    <p className="mt-4 text-slate-600">NextGen clients benefit from proven billing performance and faster collections with Transcureâ€™s managed support.</p>
+                    <p className="mt-4 text-slate-600">NextGen clients benefit from proven billing performance and faster collections with Transcure's managed support.</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     {metrics.slice(0, 4).map((metric) => (
@@ -175,7 +175,7 @@ export default function NextGenPage() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Affordable revenue cycle management pricing</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Affordable revenue cycle management pricing</h2>
-                  <p className="mt-4 text-slate-600">Transcureâ€™s NextGen billing solution is priced to deliver full RCM support without slowing your practice down.</p>
+                  <p className="mt-4 text-slate-600">Transcure's NextGen billing solution is priced to deliver full RCM support without slowing your practice down.</p>
                   <div className="mt-8 rounded-[2rem] border border-primary/20 bg-primary/10 p-6 text-white">
                     <p className="text-sm uppercase tracking-[0.32em] text-white/80">All-in-One RCM</p>
                     <h3 className="mt-4 text-3xl font-bold">35% of monthly collections</h3>

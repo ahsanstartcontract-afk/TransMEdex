@@ -16,7 +16,7 @@ export default function EpicPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Epic Contact Us request:', form);
-    alert('Thank you â€” your Epic Contact Us request has been received.');
+    alert('Thank you — your Epic Contact Us request has been received.');
   };
 
   const solutions = [
@@ -139,9 +139,9 @@ export default function EpicPage() {
               <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 shadow-sm">
                 <div className="grid gap-8 lg:grid-cols-2">
                   <div className="space-y-4">
-                    <p className="text-sm uppercase tracking-[0.4em] text-primary/80">How Does TransMedexâ€™s Epic Medical Billing Support Work?</p>
+                    <p className="text-sm uppercase tracking-[0.4em] text-primary/80">How Does TransMedex's Epic Medical Billing Support Work?</p>
                     <h2 className="text-3xl font-bold text-slate-950">Epic Medical Billing Support Workflow</h2>
-                    <p className="text-slate-600">TransMedexâ€™s Epic billing services work through proven Epic-specific processes, from pre-billing validation to ongoing Epic system support.</p>
+                    <p className="text-slate-600">TransMedex's Epic billing services work through proven Epic-specific processes, from pre-billing validation to ongoing Epic system support.</p>
                   </div>
                   <div className="rounded-[1.75rem] bg-white p-6 shadow-sm">
                     <div className="grid gap-4">
@@ -215,8 +215,8 @@ export default function EpicPage() {
                 <div className="grid gap-8 lg:grid-cols-3">
                   <div className="space-y-4">
                     <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Why use Epic vs in-house billing?</p>
-                    <h2 className="text-3xl font-bold text-slate-950">Should you use Epicâ€™s own billing services or outsource to TransMedex?</h2>
-                    <p className="text-slate-600">We help providers compare their internal Epic billing model against TransMedexâ€™s managed specialist approach.</p>
+                    <h2 className="text-3xl font-bold text-slate-950">Should you use Epic's own billing services or outsource to TransMedex?</h2>
+                    <p className="text-slate-600">We help providers compare their internal Epic billing model against TransMedex's managed specialist approach.</p>
                   </div>
                   <div className="lg:col-span-2 overflow-x-auto">
                     <table className="min-w-full border-collapse text-left text-sm text-slate-700">
@@ -282,7 +282,7 @@ export default function EpicPage() {
                 <div className="grid gap-8 lg:grid-cols-3">
                   <div className="space-y-4">
                     <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Epic Billing Services</p>
-                    <h2 className="text-3xl font-bold text-slate-950">What is included in TransMedexâ€™s Epic Billing Services?</h2>
+                    <h2 className="text-3xl font-bold text-slate-950">What is included in TransMedex's Epic Billing Services?</h2>
                     <p className="text-slate-600">We provide Epic-focused billing support designed to reduce denials, accelerate reimbursement, and keep your practice productive.</p>
                   </div>
 
