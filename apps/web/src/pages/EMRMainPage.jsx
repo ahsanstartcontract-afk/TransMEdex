@@ -183,14 +183,6 @@ export default function EMRMainPage() {
               ))}
             </div>
             
-            {/* Dots */}
-            <div className="flex justify-center gap-2 mt-8">
-              <span className="h-2 w-2 rounded-full bg-white"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-            </div>
           </motion.section>
 
           {/* Why Do Practices Choose Section */}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 
@@ -125,6 +125,8 @@ const statesData = allStatesList.map((stateName) => {
 });
 
 export default function StatesMainPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans">
       <Helmet>
@@ -184,6 +186,7 @@ export default function StatesMainPage() {
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: (index % 10) * 0.05 }}
                 whileHover={{ y: -8 }}
+                onClick={() => navigate(state.path)}
                 className="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer"
               >
                 <div className="h-48 overflow-hidden">
@@ -200,13 +203,12 @@ export default function StatesMainPage() {
                   <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-grow">
                     {state.desc}
                   </p>
-                  <Link 
-                    to={state.path}
+                  <span 
                     className="text-[#0da1df] font-bold text-sm tracking-wide mt-auto flex items-center group-hover:text-[#0b87ba] transition-colors"
                   >
                     Optimize Billing Now
                     <span className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1">→</span>
-                  </Link>
+                  </span>
                 </div>
               </motion.div>
             ))}

@@ -53,18 +53,18 @@ const EMRCard = ({ platform }) => {
   return (
     <Link
       to={platform.path}
-      className="flex flex-col items-center justify-center h-28 px-4 rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
+      className="flex flex-col items-center justify-center h-24 sm:h-28 px-2 sm:px-4 rounded-xl border border-slate-200 bg-white shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
     >
       {!imgError && platform.domain && (
         <img
           src={`https://logo.clearbit.com/${platform.domain}`}
           alt={`${platform.name} logo`}
-          className="h-10 w-auto object-contain mb-3 transition-transform group-hover:scale-105"
+          className="h-8 sm:h-10 w-auto object-contain mb-2 sm:mb-3 transition-transform group-hover:scale-105"
           onError={() => setImgError(true)}
         />
       )}
       
-      <span className={`font-semibold text-center text-sm group-hover:text-primary transition-colors ${!imgError && platform.domain ? 'text-slate-600' : 'text-slate-700'}`}>
+      <span className={`font-semibold text-center text-xs sm:text-sm group-hover:text-primary transition-colors ${!imgError && platform.domain ? 'text-slate-600' : 'text-slate-700'}`}>
         {platform.name}
       </span>
     </Link>
@@ -100,7 +100,7 @@ export default function EHRMainPage() {
               Our medical billing specialists support all of the following EHRs with their services. We help you submit clean claims no matter which EHR you use.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4 md:gap-6">
               {emrPlatforms.map((platform, index) => (
                 <motion.div
                   key={index}
@@ -130,8 +130,8 @@ export default function EHRMainPage() {
               Practices should outsource EHR billing services to cut operational costs by up to 30%, per MGMA benchmarks. In-house teams cost more and delay more. The comparison is not close.
             </p>
 
-            <div className="overflow-x-auto max-w-5xl mx-auto">
-              <table className="w-full border-collapse">
+            <div className="w-full overflow-x-auto rounded-xl">
+              <table className="w-full min-w-[600px] border-collapse text-left">
                 <thead>
                   <tr>
                     <th className="border border-white/30 p-4 font-semibold w-1/3">Factor</th>
@@ -191,7 +191,7 @@ export default function EHRMainPage() {
               TransMedex's EHR medical billing services cover every RCM stage from patient scheduling to final payment posting. Twelve core services run inside your existing EHR system.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { icon: ShieldCheck, title: "Patient Eligibility Verification", text: "PEVA verifies insurance coverage, copays, and deductibles before every appointment. This AI agent for medical billing prevents denials to drop your rejection rate." },
                 { icon: FileSearch, title: "Prior Authorization Management", text: "PAMA tracks authorization requirements by payer and CPT code. Aetna, UnitedHealth, and state Medicaid plans each get payer-specific protocols." },
@@ -207,14 +207,6 @@ export default function EHRMainPage() {
               ))}
             </div>
             
-            {/* Dots */}
-            <div className="flex justify-center gap-2 mt-8">
-              <span className="h-2 w-2 rounded-full bg-white"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-              <span className="h-2 w-2 rounded-full bg-white/30"></span>
-            </div>
           </motion.section>
 
           {/* Why Do Practices Choose Section */}
@@ -275,7 +267,7 @@ export default function EHRMainPage() {
               </p>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
                 {[
                   { stat: "40+", label: "EHR Platforms Supported", desc: "Epic, Cerner, athenahealth, AdvancedMD & more" },
                   { stat: "99%", label: "First-Pass Claim Acceptance", desc: "Industry-leading clean claim rate across all EHRs" },
@@ -298,7 +290,7 @@ export default function EHRMainPage() {
               </div>
 
               {/* EHR Platform Highlights */}
-              <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
                 {[
                   { 
                     title: "Seamless EHR Integration", 
@@ -362,16 +354,16 @@ export default function EHRMainPage() {
                 { step: "Step 4.", title: "Go-Live", icon: Rocket, text: "Claims processing begins with real-time QA checks on every submission. Your first batch runs through TransMedex's internal scrubbing layer before hitting your EHR's native clearinghouse. Charge posting, eligibility verification, and claim transmission start on day one of go-live." },
                 { step: "Step 5.", title: "Ongoing Optimization", icon: TrendingUp, text: "Monthly KPI reviews track clean claim rates, denial trends, and AR days against MGMA benchmarks. Your billing team adjusts payer-specific rules, modifier logic, and coding patterns based on live performance data. This is not a set-and-forget service." }
               ].map((item, i) => (
-                <div key={i} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col sm:flex-row">
-                  <div className="bg-[#0f172a] text-white p-4 md:w-32 flex-shrink-0 flex items-center justify-center md:justify-start font-bold text-lg rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl">
+                <div key={i} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col md:flex-row">
+                  <div className="bg-[#0f172a] text-white p-4 md:w-36 flex-shrink-0 flex items-center justify-center md:justify-start font-bold text-lg rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl">
                     {item.step}
                   </div>
-                  <div className="p-6 flex items-start gap-4 flex-grow">
-                    <div className="h-10 w-10 bg-[#0da1df]/10 rounded-full flex items-center justify-center flex-shrink-0 text-[#0da1df] mt-1">
+                  <div className="p-4 sm:p-6 flex flex-col sm:flex-row items-start gap-4 flex-grow">
+                    <div className="h-10 w-10 bg-[#0da1df]/10 rounded-full flex items-center justify-center flex-shrink-0 text-[#0da1df] sm:mt-1">
                       <item.icon className="h-5 w-5" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
                       <p className="text-slate-600 text-sm leading-relaxed">{item.text}</p>
                     </div>
                   </div>
