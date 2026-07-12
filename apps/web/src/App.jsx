@@ -38,7 +38,6 @@ import IndependentPracticesPage from '@/pages/IndependentPracticesPage.jsx';
 import ServicesPage from '@/pages/ServicesPage.jsx';
 import MedicalBillingPage from '@/pages/MedicalBillingPage.jsx';
 import RCMPage from '@/pages/RCMPage.jsx';
-import CredentialingPage from '@/pages/CredentialingPage.jsx';
 import MedicalCodingPage from '@/pages/MedicalCodingPage.jsx';
 import ClearinghousePage from '@/pages/ClearinghousePage.jsx';
 import MedicalAuditPage from '@/pages/MedicalAuditPage.jsx';
@@ -71,7 +70,6 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/services/medical-billing" element={<MedicalBillingPage />} />
         <Route path="/services/rcm" element={<RCMPage />} />
-        <Route path="/services/credentialing" element={<CredentialingPage />} />
         <Route path="/services/medical-coding" element={<MedicalCodingPage />} />
         <Route path="/services/clearinghouse" element={<ClearinghousePage />} />
         <Route path="/services/medical-audit" element={<MedicalAuditPage />} />
@@ -79,8 +77,6 @@ function App() {
         <Route path="/services/medical-billing-coding" element={<MedicalBillingCodingPage />} />
         <Route path="/services/mips-consulting" element={<MIPSConsultingPage />} />
         <Route path="/services/laboratory-billing" element={<LaboratoryBillingPage />} />
-        <Route path="/services/revenue-cycle-management" element={<RCMPage />} />
-        <Route path="/services/medical-audit" element={<MedicalAuditPage />} />
         <Route path="/services/eligibility-verification" element={<PatientBenefitsEligibilityPage />} />
         <Route path="/emr/epic" element={<EpicPage />} />
         <Route path="/emr/athenahealth" element={<AthenahealthPage />} />
@@ -106,7 +102,6 @@ function App() {
         <Route path="/services/:slug" element={<GenericPage categoryOverride="services" />} />
 
         <Route path="/emr/:slug" element={<GenericPage categoryOverride="emr" />} />
-        <Route path="/states" element={<StatesMainPage />} />
         <Route path="/states/texas" element={<TexasPage />} />
         <Route path="/states/california" element={<CaliforniaPage />} />
         <Route path="/states/delaware" element={<DelawarePage />} />

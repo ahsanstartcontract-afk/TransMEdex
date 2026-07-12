@@ -12,7 +12,7 @@ function MedicalGroupPracticesPage() {
     { 
       icon: <DollarSign className="w-8 h-8" />, 
       title: 'Advanced Payment Posting', 
-      description: 'Improve the payment posting process with Transcure and achieve a seamless billing process. Also, we empower medical group practices to make better financial decisions.' 
+      description: 'Improve the payment posting process with TransMedex and achieve a seamless billing process. Also, we empower medical group practices to make better financial decisions.' 
     },
     { 
       icon: <CheckCircle className="w-8 h-8" />, 
@@ -123,21 +123,21 @@ function MedicalGroupPracticesPage() {
   return (
     <WhoWeServeTemplate 
       pageTitle="Medical Group Practices Billing Services"
-      seoDescription="Enhance your medical group practice's billing process with Transcure. Super-fast claim submission, advanced payment posting, and clean claim submissions."
+      seoDescription="Enhance your medical group practice's billing process with TransMedex. Super-fast claim submission, advanced payment posting, and clean claim submissions."
       heroTitle="Enhance Billing Process of Medical Group Practices"
       heroImage="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Streamline medical billing and get timely payments."
       heroFeatures={heroFeatures}
       mainContentTitle="Enhance Operational Efficiency with Hospital Billing Company"
-      mainContentSubtitle="Leverage These Benefits of Choosing Transcure"
+      mainContentSubtitle="Leverage These Benefits of Choosing TransMedex"
       mainContentHeading="Managing your group practice plus billing services, sounds great?"
-      mainContentText1="Transcure provides end-to-end RCM services for medical group practices. As an expert medical billing group, we ensure seamless reimbursements to help you thrive in the modern healthcare ecosystem."
+      mainContentText1="TransMedex provides end-to-end RCM services for medical group practices. As an expert medical billing group, we ensure seamless reimbursements to help you thrive in the modern healthcare ecosystem."
       mainContentText2="Our denial management services help medical group practices to get paid on time for their services. Also, we help you reduce accounts receivable and prevent claim denials to boost revenue growth."
       mainContentBullets={mainContentBullets}
       ribbonTitle="Complete Billing Solutions for Medical Group Practices"
       ribbonItems={ribbonItems}
       rcmTabs={rcmTabs}
-      pricingLeftHeading="Why Choose Transcure for Medical Group Practices?"
+      pricingLeftHeading="Why Choose TransMedex for Medical Group Practices?"
       pricingBullets={pricingBullets}
       pricingCardTitle="All-in-One RCM"
       pricingCardFee="5% of Monthly Collections"

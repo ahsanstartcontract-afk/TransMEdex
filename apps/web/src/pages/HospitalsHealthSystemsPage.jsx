@@ -123,7 +123,7 @@ function HospitalsHealthSystemsPage() {
   return (
     <WhoWeServeTemplate 
       pageTitle="Billing for Hospitals & Health Systems"
-      seoDescription="Enterprise-grade medical billing and RCM services for hospitals and health systems. Scale your revenue cycle operations with Transcure."
+      seoDescription="Enterprise-grade medical billing and RCM services for hospitals and health systems. Scale your revenue cycle operations with TransMedex."
       heroTitle="Enterprise RCM Solutions for Hospitals & Health Systems"
       heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Maximize revenue, ensure compliance, and scale efficiently with our enterprise billing services."
@@ -131,13 +131,13 @@ function HospitalsHealthSystemsPage() {
       mainContentTitle="Transform Your Health System's Financial Performance"
       mainContentSubtitle="Leverage enterprise-grade technology and expertise."
       mainContentHeading="Is your hospital's revenue cycle keeping pace with your growth?"
-      mainContentText1="Hospitals and large health systems face unique revenue cycle challenges: massive claim volumes, complex payer contracts, disparate departmental systems, and strict regulatory requirements. Transcure understands these complexities."
+      mainContentText1="Hospitals and large health systems face unique revenue cycle challenges: massive claim volumes, complex payer contracts, disparate departmental systems, and strict regulatory requirements. TransMedex understands these complexities."
       mainContentText2="We provide enterprise-level RCM services designed to consolidate your billing processes, improve interoperability, and aggressively work down AR, ensuring your health system remains financially strong and ready for expansion."
       mainContentBullets={mainContentBullets}
       ribbonTitle="Enterprise Billing Solutions"
       ribbonItems={ribbonItems}
       rcmTabs={rcmTabs}
-      pricingLeftHeading="Why Choose Transcure for Hospital Billing?"
+      pricingLeftHeading="Why Choose TransMedex for Hospital Billing?"
       pricingBullets={pricingBullets}
       pricingCardTitle="Enterprise RCM"
       pricingCardFee="Custom Pricing"

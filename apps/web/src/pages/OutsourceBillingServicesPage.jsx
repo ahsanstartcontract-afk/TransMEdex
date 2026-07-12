@@ -123,21 +123,21 @@ function OutsourceBillingServicesPage() {
   return (
     <WhoWeServeTemplate 
       pageTitle="Outsource Medical Billing Services"
-      seoDescription="Outsource your medical billing to Transcure. Reduce costs, accelerate revenue, and ensure compliance with our expert billing teams."
+      seoDescription="Outsource your medical billing to TransMedex. Reduce costs, accelerate revenue, and ensure compliance with our expert billing teams."
       heroTitle="Transform Your Practice by Outsourcing Medical Billing"
       heroImage="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Let the experts handle your revenue cycle while you focus on patient care."
       heroFeatures={heroFeatures}
       mainContentTitle="The Strategic Advantage of Outsourced Billing"
-      mainContentSubtitle="Partner with Transcure for unmatched financial performance."
+      mainContentSubtitle="Partner with TransMedex for unmatched financial performance."
       mainContentHeading="Is in-house billing draining your resources and profits?"
-      mainContentText1="Managing an in-house billing team comes with hidden costs: salaries, benefits, turnover, training, and software fees. By outsourcing your billing to Transcure, you convert fixed costs into a predictable percentage of collections."
+      mainContentText1="Managing an in-house billing team comes with hidden costs: salaries, benefits, turnover, training, and software fees. By outsourcing your billing to TransMedex, you convert fixed costs into a predictable percentage of collections."
       mainContentText2="Our specialized teams work as an extension of your practice. We leverage advanced technology and deep industry expertise to collect every dollar you rightfully earn, significantly improving your bottom line."
       mainContentBullets={mainContentBullets}
       ribbonTitle="Comprehensive Outsourced Billing Solutions"
       ribbonItems={ribbonItems}
       rcmTabs={rcmTabs}
-      pricingLeftHeading="Why Choose Transcure for Outsourced Billing?"
+      pricingLeftHeading="Why Choose TransMedex for Outsourced Billing?"
       pricingBullets={pricingBullets}
       pricingCardTitle="All-in-One RCM"
       pricingCardFee="5% of Monthly Collections"

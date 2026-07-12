@@ -108,36 +108,36 @@ function SmallPracticesPage() {
   const faqs = [
     {
       question: 'Which company is best for medical billing for small practices?',
-      answer: 'Transcure is widely considered a top choice for small practices because we offer enterprise-level RCM tools tailored to the specific needs and budgets of solo practitioners and small clinics.'
+      answer: 'TransMedex is widely considered a top choice for small practices because we offer enterprise-level RCM tools tailored to the specific needs and budgets of solo practitioners and small clinics.'
     },
     {
-      question: 'What is Transcure\'s pricing model for medical billing for small practices?',
+      question: 'What is TransMedex\'s pricing model for medical billing for small practices?',
       answer: 'We offer an affordable flat rate of 5% of monthly collections. There are no setup fees or hidden charges. We only get paid when you get paid.'
     },
     {
-      question: 'Is Transcure compliant with healthcare regulations?',
-      answer: 'Yes, Transcure is strictly HIPAA compliant and ISO 27001 certified. We prioritize the security and confidentiality of all your patient and practice data.'
+      question: 'Is TransMedex compliant with healthcare regulations?',
+      answer: 'Yes, TransMedex is strictly HIPAA compliant and ISO 27001 certified. We prioritize the security and confidentiality of all your patient and practice data.'
     }
   ];
 
   return (
     <WhoWeServeTemplate 
       pageTitle="Medical Billing for Small Practices"
-      seoDescription="Affordable, expert medical billing services tailored for solo practitioners and small medical practices. Improve cash flow with Transcure."
+      seoDescription="Affordable, expert medical billing services tailored for solo practitioners and small medical practices. Improve cash flow with TransMedex."
       heroTitle="Empowering Small Practices with Expert Medical Billing"
       heroImage="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Big-practice resources and technology, personalized for your small clinic."
       heroFeatures={heroFeatures}
       mainContentTitle="Focus on Your Patients, We'll Focus on Your Payments"
-      mainContentSubtitle="Discover why small practices trust Transcure for their financial health."
+      mainContentSubtitle="Discover why small practices trust TransMedex for their financial health."
       mainContentHeading="Struggling to balance patient care with billing headaches?"
       mainContentText1="For solo practitioners and small medical groups, managing billing in-house often means the physician is spending evenings and weekends dealing with insurance companies instead of resting or focusing on clinical care."
-      mainContentText2="Transcure offers a lifeline. Our comprehensive medical billing services act as your virtual back-office, bringing enterprise-level technology and expertise to your small practice at a fraction of the cost of hiring an in-house biller."
+      mainContentText2="TransMedex offers a lifeline. Our comprehensive medical billing services act as your virtual back-office, bringing enterprise-level technology and expertise to your small practice at a fraction of the cost of hiring an in-house biller."
       mainContentBullets={mainContentBullets}
       ribbonTitle="Flexible Billing Solutions That Fit Small Practice Needs"
       ribbonItems={ribbonItems}
       rcmTabs={rcmTabs}
-      pricingLeftHeading="Why Choose Transcure for Medical Billing Services for Small Practices?"
+      pricingLeftHeading="Why Choose TransMedex for Medical Billing Services for Small Practices?"
       pricingBullets={pricingBullets}
       pricingCardTitle="All-in-One RCM"
       pricingCardFee="5% of Monthly Collections"

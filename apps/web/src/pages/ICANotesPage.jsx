@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, ClipboardCheck, Bolt, Layers, ArrowRight } from 'lucide-react';
@@ -22,7 +22,7 @@ export default function ICANotesPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('ICANotes Contact Us request:', form);
-    alert('Thank you — your ICANotes Contact Us request has been received.');
+    alert('Thank you � your ICANotes Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 
@@ -40,7 +40,7 @@ export default function ICANotesPage() {
   const sections = [
     {
       title: 'Medical Billing Services',
-      description: 'Transcure is a medical billing partner offering ICANotes support to clinics that need better claims accuracy, faster appeals, and cleaner revenue cycles.',
+      description: 'TransMedex is a medical billing partner offering ICANotes support to clinics that need better claims accuracy, faster appeals, and cleaner revenue cycles.',
     },
     {
       title: 'ICANotes RCM',

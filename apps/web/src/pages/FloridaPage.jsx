@@ -22,7 +22,7 @@ function FloridaPage() {
     <StatePageTemplate 
       stateName="Florida"
       seoDescription="Expert medical billing services in Florida. AAPC-certified coders, PIP compliance, and AI-powered workflows."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Ocean_drive_day_2009j.JPG/960px-Ocean_drive_day_2009j.JPG"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

@@ -22,7 +22,7 @@ function TexasPage() {
     <StatePageTemplate 
       stateName="Texas"
       seoDescription="Expert medical billing services in Texas. AAPC-certified coders, AI-powered workflows, and compliance with Texas billing regulations."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/960px-Flag_of_Texas.svg.png"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

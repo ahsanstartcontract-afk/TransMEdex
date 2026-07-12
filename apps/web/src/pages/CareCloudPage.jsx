@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, ClipboardCheck, BarChart3, Users, Layers } from 'lucide-react';
@@ -14,7 +14,7 @@ export default function CareCloudPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('CareCloud Contact Us request:', form);
-    alert('Thank you — your CareCloud Contact Us request has been received.');
+    alert('Thank you � your CareCloud Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 
@@ -110,7 +110,7 @@ export default function CareCloudPage() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Enhance financial outcomes with CareCloud EHR support</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Enhance financial outcomes with CareCloud EHR support</h2>
-                  <p className="mt-4 text-slate-600">Transcure helps practices improve collections and recover revenue with flexible, CareCloud-ready billing support and RCM services.</p>
+                  <p className="mt-4 text-slate-600">TransMedex helps practices improve collections and recover revenue with flexible, CareCloud-ready billing support and RCM services.</p>
                   <ul className="mt-6 space-y-3 text-slate-600">
                     {[
                       'Optimize care delivery and billing interactions in CareCloud',
@@ -149,8 +149,8 @@ export default function CareCloudPage() {
               <div className="rounded-[2rem] border border-slate-200 bg-slate-50 p-10 shadow-sm">
                 <div className="grid gap-8  items-start">
                   <div>
-                    <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Transcure's Advantage</p>
-                    <h2 className="mt-4 text-3xl font-bold text-slate-950">Transcure's Advantage</h2>
+                    <p className="text-sm uppercase tracking-[0.4em] text-primary/80">TransMedex's Advantage</p>
+                    <h2 className="mt-4 text-3xl font-bold text-slate-950">TransMedex's Advantage</h2>
                     <p className="mt-4 text-slate-600">Our team knows the workflows of CareCloud clinical and revenue cycle users, and we deliver outcome-focused support to maximize reimbursements.</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
@@ -189,7 +189,7 @@ export default function CareCloudPage() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Affordable Revenue Cycle Management Pricing</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Affordable Revenue Cycle Management Pricing</h2>
-                  <p className="mt-4 text-slate-600">Transcure offers a clear, all-in-one RCM package for CareCloud with predictable fees and measurable ROI.</p>
+                  <p className="mt-4 text-slate-600">TransMedex offers a clear, all-in-one RCM package for CareCloud with predictable fees and measurable ROI.</p>
                   <div className="mt-8 rounded-[2rem] border border-primary/20 bg-primary/10 p-6 text-white">
                     <p className="text-sm uppercase tracking-[0.32em] text-white/80">All-in-One RCM</p>
                     <h3 className="mt-4 text-3xl font-bold">35% of monthly collections</h3>

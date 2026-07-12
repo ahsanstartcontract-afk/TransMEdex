@@ -30,7 +30,7 @@ export default function NextGenPage() {
   ];
 
   const offerings = [
-    { title: 'Medical Billing Services', description: 'Transcure supports NextGen with medical billing workflows that improve collections, reduce denials, and keep cash flow consistent.' },
+    { title: 'Medical Billing Services', description: 'TransMedex supports NextGen with medical billing workflows that improve collections, reduce denials, and keep cash flow consistent.' },
     { title: 'NextGen RCM', description: 'Our RCM team delivers claim scrubbing, scheduling reconciliation, patient posting, and payer follow-up inside NextGen.' },
     { title: 'NextGen Services', description: 'We also provide advanced practice management services that align your revenue cycle with NextGen\'s system workflows.' },
   ];
@@ -107,8 +107,8 @@ export default function NextGenPage() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid gap-10  items-center">
                 <div>
-                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Advantages of partnering with Transcure for NextGen software</p>
-                  <h2 className="mt-4 text-3xl font-bold text-slate-950">Advantages of partnering with Transcure for NextGen medical software</h2>
+                  <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Advantages of partnering with TransMedex for NextGen software</p>
+                  <h2 className="mt-4 text-3xl font-bold text-slate-950">Advantages of partnering with TransMedex for NextGen medical software</h2>
                   <p className="mt-4 text-slate-600">Our flexible NextGen support helps you recover collections, reduce denials, and build process discipline inside your practice management system.</p>
                   <ul className="mt-6 space-y-3 text-slate-600">
                     {[
@@ -154,7 +154,7 @@ export default function NextGenPage() {
                   <div>
                     <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Our success in numbers</p>
                     <h2 className="mt-4 text-3xl font-bold text-slate-950">Our success in numbers</h2>
-                    <p className="mt-4 text-slate-600">NextGen clients benefit from proven billing performance and faster collections with Transcure's managed support.</p>
+                    <p className="mt-4 text-slate-600">NextGen clients benefit from proven billing performance and faster collections with TransMedex's managed support.</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2">
                     {metrics.slice(0, 4).map((metric) => (
@@ -175,7 +175,7 @@ export default function NextGenPage() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.4em] text-primary/80">Affordable revenue cycle management pricing</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-950">Affordable revenue cycle management pricing</h2>
-                  <p className="mt-4 text-slate-600">Transcure's NextGen billing solution is priced to deliver full RCM support without slowing your practice down.</p>
+                  <p className="mt-4 text-slate-600">TransMedex's NextGen billing solution is priced to deliver full RCM support without slowing your practice down.</p>
                   <div className="mt-8 rounded-[2rem] border border-primary/20 bg-primary/10 p-6 text-white">
                     <p className="text-sm uppercase tracking-[0.32em] text-white/80">All-in-One RCM</p>
                     <h3 className="mt-4 text-3xl font-bold">35% of monthly collections</h3>

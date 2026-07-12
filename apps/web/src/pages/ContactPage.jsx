@@ -185,7 +185,7 @@ function ContactPage() {
                       </p>
                       <Button 
                         onClick={() => setIsSuccess(false)}
-                        className="mt-8 bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 font-semibold"
+                        className="mt-8 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white rounded-full px-8 py-6 font-semibold"
                       >
                         Send Another Message
                       </Button>
@@ -247,7 +247,7 @@ function ContactPage() {
                       <Button 
                         type="submit" 
                         disabled={isSubmitting}
-                        className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 text-sm font-semibold transition-colors"
+                        className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white rounded-full px-8 py-6 text-sm font-semibold transition-colors"
                       >
                         {isSubmitting ? 'Sending...' : 'Contact Us'}
                       </Button>
@@ -310,7 +310,7 @@ function ContactPage() {
           <section className="py-20 bg-slate-50">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">Provider-Focused Healthcare Products and Medical Billing Services</h2>
-              <p className="text-slate-600 mb-16">Transcure aims to provide high-quality medical billing solutions to streamline cash flow and reduce revenue losses.</p>
+              <p className="text-slate-600 mb-16">TransMedex aims to provide high-quality medical billing solutions to streamline cash flow and reduce revenue losses.</p>
               
               <div className="relative mx-auto rounded-xl overflow-hidden shadow-2xl border border-slate-200">
                 <img 
@@ -331,9 +331,9 @@ function ContactPage() {
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-6">Achieve Better Clinical Outcomes</h3>
                   <p className="text-slate-600 leading-relaxed mb-8">
-                    Work smartly with Transcure and get customized medical billing solutions for hassle-free practice management. Increase operational efficiency, better clinical outcomes, and improve patient health with our healthcare IT products and RCM services. Gain better control over practice procedures and administrative tasks with Transcure Medical Billing.
+                    Work smartly with TransMedex and get customized medical billing solutions for hassle-free practice management. Increase operational efficiency, better clinical outcomes, and improve patient health with our healthcare IT products and RCM services. Gain better control over practice procedures and administrative tasks with TransMedex Medical Billing.
                   </p>
-                  <Button asChild className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 font-semibold">
+                  <Button asChild className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white rounded-full px-8 py-6 font-semibold">
                     <Link to="/specialties">View Specialties</Link>
                   </Button>
                 </div>
@@ -360,7 +360,7 @@ function ContactPage() {
                   <p className="text-slate-600 leading-relaxed mb-8">
                     Get stress-free billing and avoid physician burnout by efficient revenue cycle management in the modern healthcare industry. Give your patients better experience by involving them in care management. We help you collaborate with patients, payers, and other organizations to thrive in the competitive healthcare marketplace.
                   </p>
-                  <Button asChild className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-8 py-6 font-semibold">
+                  <Button asChild className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white rounded-full px-8 py-6 font-semibold">
                     <Link to="/specialties">View Specialties</Link>
                   </Button>
                 </div>

@@ -182,7 +182,7 @@ function MIPSConsultingPage() {
           <section className="py-12 bg-gradient-to-br from-primary to-[hsl(260,70%,50%)] text-primary-foreground">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl font-bold mb-4">Maximize Your MIPS Performance & Avoid Penalties</h2>
-              <p className="mb-6 text-muted-foreground">Get expert guidance on measure selection, improvement activities, and CMS reporting to optimize your MIPS score.</p>
+              <p className="mb-6 text-secondary-foreground text-white">Get expert guidance on measure selection, improvement activities, and CMS reporting to optimize your MIPS score.</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg"><Link to="/contact">Get MIPS strategy session</Link></Button>
                 <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900"><Link to="/contact">Schedule call</Link></Button>

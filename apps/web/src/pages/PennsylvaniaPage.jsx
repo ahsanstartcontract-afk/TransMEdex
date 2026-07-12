@@ -22,7 +22,7 @@ function PennsylvaniaPage() {
     <StatePageTemplate 
       stateName="Pennsylvania"
       seoDescription="Expert medical billing services in Pennsylvania. AAPC-certified coders, comprehensive RCM, and AI-powered workflows."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Independence_Hall.jpg/960px-Independence_Hall.jpg"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

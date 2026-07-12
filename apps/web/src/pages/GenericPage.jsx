@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams, Link } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
@@ -77,10 +77,10 @@ function GenericPage({ categoryOverride }) {
                     </p>
                     <div className="flex flex-col gap-4 sm:flex-row">
                       <Button asChild className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary/90">
-                        <Link to="/contact">Book Contact Us</Link>
+                        <Link to="/contact">Contact Us</Link>
                       </Button>
-                      <Button asChild variant="outline" className="rounded-full px-6 py-3 text-sm font-semibold bg-transparent text-white border-white hover:bg-white hover:text-slate-900">
-                        <Link to="/services">Explore our services</Link>
+                      <Button asChild variant="outline" className="rounded-full px-6 py-3 text-sm font-semibold bg-transparent text-slate-700 border-slate-300 hover:bg-slate-100 hover:text-slate-900">
+                        <Link to="/services">Explore Our Services</Link>
                       </Button>
                     </div>
                   </div>

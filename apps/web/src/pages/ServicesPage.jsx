@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import {
@@ -46,14 +46,7 @@ const mainServices = [
     link: '/services/rcm',
     features: ['Full cycle management', 'Denial management', 'AR recovery', 'Reporting']
   },
-  {
-    id: 'credentialing',
-    title: 'Provider Credentialing',
-    description: 'Provider enrollment services by our credentialing specialists help healthcare providers join the network of desirable payors with maximum privileges.',
-    icon: Shield,
-    link: '/services/credentialing',
-    features: ['Provider enrollment', 'Network privileges', 'Maintenance', 'Support']
-  },
+
   {
     id: 'clearinghouse',
     title: 'Clearinghouse Services',

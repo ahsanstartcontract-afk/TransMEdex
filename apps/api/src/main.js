@@ -132,6 +132,11 @@ app.get('/health', (req, res) => {
 	res.json({ status: 'ok' });
 });
 
+// Root route to indicate the API is running
+app.get('/', (req, res) => {
+	res.send('Transmedex API is running');
+});
+
 // Wildcard fallback for React routing (only if dist exists)
 if (fs.existsSync(distPath)) {
 	app.get('/{*splat}', (req, res, next) => {

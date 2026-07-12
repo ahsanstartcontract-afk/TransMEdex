@@ -290,7 +290,7 @@ function Header() {
               </DropdownNav>
 
               {/* Our Clients */}
-              <DropdownNav label="Our Clients" to="#" dropdownWidth="w-[300px]" alignClass="-left-4">
+              <DropdownNav label="Our Clients" to="/who-we-serve/medical-group-practices" dropdownWidth="w-[300px]" alignClass="-left-4">
                 <div className="p-2 flex flex-col gap-1">
                   {whoWeServe.map((w) => (
                     <Link
@@ -308,7 +308,7 @@ function Header() {
               </DropdownNav>
 
               {/* Resources */}
-              <DropdownNav label="Resources" to="#" dropdownWidth="w-[240px]" alignClass="-left-4">
+              <DropdownNav label="Resources" to="/resources/company" dropdownWidth="w-[240px]" alignClass="-left-4">
                 <div className="p-2 flex flex-col gap-1">
                   {resources.map((r) => (
                     <Link

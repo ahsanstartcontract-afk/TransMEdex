@@ -22,7 +22,7 @@ function CaliforniaPage() {
     <StatePageTemplate 
       stateName="California"
       seoDescription="Expert medical billing services in California. AAPC-certified coders, Medi-Cal compliance, and AI-powered workflows."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/960px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

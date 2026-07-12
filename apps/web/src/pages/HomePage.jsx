@@ -41,12 +41,7 @@ const services = [
     icon: ShieldCheck,
     path: '/services/medical-coding',
   },
-  {
-    title: 'Provider Credentialing',
-    description: 'Provider enrollment services by our credentialing specialists help healthcare providers join the network of desirable payors with maximum privileges.',
-    icon: Shield,
-    path: '/services/provider-credentialing',
-  },
+
   {
     title: 'Healthcare RCM',
     description: 'Revenue cycle management services are specialty-specific, which means a physician\'s bespoke demands are met by a dedicated medical biller.',

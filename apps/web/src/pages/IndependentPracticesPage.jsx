@@ -108,14 +108,14 @@ function IndependentPracticesPage() {
   const faqs = [
     {
       question: 'Will I lose control of my practice by outsourcing billing?',
-      answer: 'No. Outsourcing to Transcure gives you more control. We provide completely transparent reporting and analytics, so you always know exactly where your finances stand, without the day-to-day burden of managing billing staff.'
+      answer: 'No. Outsourcing to TransMedex gives you more control. We provide completely transparent reporting and analytics, so you always know exactly where your finances stand, without the day-to-day burden of managing billing staff.'
     },
     {
       question: 'Do you help with credentialing for independent practices?',
       answer: 'Yes, our credentialing experts handle all your payer enrollments, CAQH updates, and re-credentialing to ensure you never miss a payment due to a lapsed credential.'
     },
     {
-      question: 'What happens to my old AR if I switch to Transcure?',
+      question: 'What happens to my old AR if I switch to TransMedex?',
       answer: 'We deploy specialized teams to aggressively work your old accounts receivable, recovering as much legacy cash as possible while simultaneously managing your new claims.'
     }
   ];
@@ -123,21 +123,21 @@ function IndependentPracticesPage() {
   return (
     <WhoWeServeTemplate 
       pageTitle="Medical Billing for Independent Practices"
-      seoDescription="Expert medical billing and RCM services for independent medical practices. Maintain your autonomy and boost your revenue with Transcure."
+      seoDescription="Expert medical billing and RCM services for independent medical practices. Maintain your autonomy and boost your revenue with TransMedex."
       heroTitle="Empowering Independent Practices with Expert Billing"
       heroImage="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=1600&q=80"
       heroSubtitle="Secure your financial independence with our comprehensive revenue cycle management."
       heroFeatures={heroFeatures}
       mainContentTitle="Stay Independent, Stay Profitable"
-      mainContentSubtitle="Discover why independent practices trust Transcure for their financial health."
+      mainContentSubtitle="Discover why independent practices trust TransMedex for their financial health."
       mainContentHeading="Are billing headaches threatening your practice's independence?"
       mainContentText1="For independent practitioners, maintaining financial stability while delivering quality care is a constant balancing act. In-house billing can quickly become a drain on resources, threatening the very autonomy you worked so hard to build."
-      mainContentText2="Transcure provides the financial infrastructure you need to stay independent. Our expert billing services act as your dedicated back-office, ensuring you get paid everything you deserve, faster and more efficiently, allowing you to focus on what matters most: your patients."
+      mainContentText2="TransMedex provides the financial infrastructure you need to stay independent. Our expert billing services act as your dedicated back-office, ensuring you get paid everything you deserve, faster and more efficiently, allowing you to focus on what matters most: your patients."
       mainContentBullets={mainContentBullets}
       ribbonTitle="Essential Billing Solutions for Independents"
       ribbonItems={ribbonItems}
       rcmTabs={rcmTabs}
-      pricingLeftHeading="Why Choose Transcure for Independent Practices?"
+      pricingLeftHeading="Why Choose TransMedex for Independent Practices?"
       pricingBullets={pricingBullets}
       pricingCardTitle="All-in-One RCM"
       pricingCardFee="5% of Monthly Collections"

@@ -22,7 +22,7 @@ function NewYorkPage() {
     <StatePageTemplate 
       stateName="New York"
       seoDescription="Expert medical billing services in New York. AAPC-certified coders, No-Fault compliance, and AI-powered workflows."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Statue_of_Liberty%2C_statue%2C_Liberty_Island%2C_New_York.jpg/960px-Statue_of_Liberty%2C_statue%2C_Liberty_Island%2C_New_York.jpg"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

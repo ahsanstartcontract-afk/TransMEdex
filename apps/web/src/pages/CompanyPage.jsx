@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -73,7 +73,7 @@ function CompanyPage() {
         <main className="flex-grow">
 
           {/* Hero */}
-          <section className="bg-gradient-to-br from-[#4b1156] via-[#6b1a7a] to-[#8c2a8d] py-20 text-white">
+          <section className="bg-gradient-to-br from-[#0c4a6e] via-[#0369a1] to-[#0ea5e9] py-20 text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ function CompanyPage() {
             </div>
           </section>
 
-          {/* What is Transcure */}
+          {/* What is TransMedex */}
           <section className="py-20 bg-white">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -141,7 +141,7 @@ function CompanyPage() {
                   <ul className="space-y-3 mb-6">
                     {services.map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <CheckCircle className="w-5 h-5 text-[#8c2a8d] mt-0.5 flex-shrink-0" />
+                        <CheckCircle className="w-5 h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                         <span className="text-slate-700">{item}</span>
                       </li>
                     ))}
@@ -175,7 +175,7 @@ function CompanyPage() {
                   <ul className="space-y-3 mb-8">
                     {technologyBullets.map((item, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <div className="w-1.5 h-1.5 rounded-full bg-[#8c2a8d] mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2 flex-shrink-0" />
                         <span className="text-slate-700">{item}</span>
                       </li>
                     ))}
@@ -186,7 +186,7 @@ function CompanyPage() {
                     <div className="space-y-4">
                       {improvements.map((imp, i) => (
                         <div key={i} className="flex items-center gap-4">
-                          <div className="text-2xl font-black text-[#8c2a8d] min-w-[70px]">{imp.value}</div>
+                          <div className="text-2xl font-black text-blue-600 min-w-[70px]">{imp.value}</div>
                           <div className="text-slate-600 text-sm leading-snug">{imp.label}</div>
                         </div>
                       ))}
@@ -198,7 +198,7 @@ function CompanyPage() {
           </section>
 
           {/* Certifications */}
-          <section className="py-16 bg-[#2d0a36]">
+          <section className="py-16 bg-[#0c2d48]">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                 <div>
@@ -210,7 +210,7 @@ function CompanyPage() {
                 <div className="flex items-center justify-center gap-10 flex-wrap">
                   {/* ISO Badge */}
                   <div className="flex flex-col items-center">
-                    <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#8c2a8d] to-[#4b1156] border-4 border-[#8c2a8d] flex items-center justify-center shadow-2xl">
+                    <div className="w-28 h-28 rounded-full bg-gradient-to-br from-sky-500 to-blue-700 border-4 border-sky-500 flex items-center justify-center shadow-2xl">
                       <div className="text-center">
                         <div className="text-white text-xs font-bold">ISO</div>
                         <div className="text-white text-[10px] font-bold">27001</div>
@@ -221,7 +221,7 @@ function CompanyPage() {
                   </div>
                   {/* HIPAA Badge */}
                   <div className="flex flex-col items-center">
-                    <div className="w-28 h-28 rounded-full bg-gradient-to-br from-[#8c2a8d] to-[#4b1156] border-4 border-[#8c2a8d] flex items-center justify-center shadow-2xl">
+                    <div className="w-28 h-28 rounded-full bg-gradient-to-br from-sky-500 to-blue-700 border-4 border-sky-500 flex items-center justify-center shadow-2xl">
                       <div className="text-center">
                         <div className="text-white text-xs font-bold">HIPAA</div>
                         <div className="text-white/70 text-[8px]">COMPLIANT</div>
@@ -249,7 +249,7 @@ function CompanyPage() {
                     >
                       <span className="font-semibold text-slate-900 pr-8 text-[15px]">{faq.question}</span>
                       {openFaq === i
-                        ? <ChevronUp className="w-5 h-5 text-[#8c2a8d] flex-shrink-0" />
+                        ? <ChevronUp className="w-5 h-5 text-blue-600 flex-shrink-0" />
                         : <ChevronDown className="w-5 h-5 text-slate-400 flex-shrink-0" />
                       }
                     </button>
@@ -274,7 +274,7 @@ function CompanyPage() {
             </div>
           </section>
 
-          {/* Why Choose Transcure */}
+          {/* Why Choose TransMedex */}
           <section className="py-20 bg-white">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6 text-center">
@@ -292,7 +292,7 @@ function CompanyPage() {
           </section>
 
           {/* CTA Banner */}
-          <section className="py-16 bg-[#1a0a22]">
+          <section className="py-16 bg-[#0a1e33]">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
@@ -300,7 +300,7 @@ function CompanyPage() {
                 </h2>
                 <p className="text-white/60 text-sm">Talk to a billing expert today. No contracts, no hidden fees.</p>
               </div>
-              <Button asChild className="bg-[#8c2a8d] hover:bg-[#722073] text-white rounded-full px-10 py-6 text-lg font-semibold shadow-xl flex-shrink-0">
+              <Button asChild className="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white rounded-full px-10 py-6 text-lg font-semibold shadow-xl flex-shrink-0">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>

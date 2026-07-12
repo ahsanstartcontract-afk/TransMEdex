@@ -22,7 +22,7 @@ function NewJerseyPage() {
     <StatePageTemplate 
       stateName="New Jersey"
       seoDescription="Expert medical billing services in New Jersey. AAPC-certified coders, PIP compliance, and AI-powered workflows."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Atlantic_City_Boardwalk_view_south_from_Caesars_Atlantic_City_by_Silveira_Neto_June_24_2012.jpg/960px-Atlantic_City_Boardwalk_view_south_from_Caesars_Atlantic_City_by_Silveira_Neto_June_24_2012.jpg"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

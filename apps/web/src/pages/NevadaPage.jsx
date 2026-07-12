@@ -22,7 +22,7 @@ function NevadaPage() {
     <StatePageTemplate 
       stateName="Nevada"
       seoDescription="Expert medical billing services in Nevada. AAPC-certified coders, comprehensive RCM, and AI-powered workflows."
-      heroImage="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80"
+      heroImage="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Las_Vegas_Strip_09_2017_4897.jpg/960px-Las_Vegas_Strip_09_2017_4897.jpg"
       challenges={challenges}
       cities={locations}
       locationType="Counties"

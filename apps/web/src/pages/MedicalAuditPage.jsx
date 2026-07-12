@@ -185,7 +185,7 @@ function MedicalAuditPage() {
           <section className="py-12 bg-gradient-to-br from-primary to-[hsl(260,70%,50%)] text-primary-foreground">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
               <h2 className="text-3xl font-bold mb-4">Identify Revenue Recovery & Compliance Issues Today</h2>
-              <p className="mb-6 text-muted-foreground">A comprehensive audit uncovers billing leaks and provides a roadmap for improvement. Schedule your audit now to maximize revenue and reduce regulatory risk.</p>
+              <p className="mb-6 text-secondary-foreground text-white">A comprehensive audit uncovers billing leaks and provides a roadmap for improvement. Schedule your audit now to maximize revenue and reduce regulatory risk.</p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg"><Link to="/contact">Schedule your audit</Link></Button>
                 <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-900"><Link to="/contact">Schedule call</Link></Button>
