@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from '@/components/ui/sonner';
 import ScrollToTop from '@/components/ScrollToTop.jsx';
+import SEOHead from '@/components/SEOHead.jsx';
 
 // Pages
 import HomePage from '@/pages/HomePage.jsx';
@@ -62,6 +63,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <SEOHead />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />

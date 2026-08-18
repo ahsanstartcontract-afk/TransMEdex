@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -46,11 +45,7 @@ function HealthcareSEOPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Healthcare SEO Services - TransMedex</title>
-        <meta name="description" content="Digital marketing strategies to grow your practice online. Increase visibility and attract more patients with TransMedex healthcare SEO services." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

@@ -1,5 +1,4 @@
 ﻿import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, CheckCircle2, Sparkles, Users, BarChart3 } from 'lucide-react';
 import Header from '@/components/Header.jsx';
@@ -71,14 +70,7 @@ export default function AthenahealthPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Athenahealth Billing Services | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex Athenahealth billing services accelerate reimbursements, reduce denials, and improve revenue capture for Athena practices."
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen bg-background text-foreground">
         <Header />
 

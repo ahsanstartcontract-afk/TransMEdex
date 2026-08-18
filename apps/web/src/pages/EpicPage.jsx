@@ -1,5 +1,4 @@
 ﻿import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header.jsx';
@@ -41,14 +40,7 @@ export default function EpicPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Epic Medical Billing Services | TransMedex</title>
-        <meta
-          name="description"
-          content="Epic medical billing services from TransMedex help healthcare practices reduce denials, accelerate payment, and optimize revenue within Epic EHR."
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen bg-background text-foreground">
         <Header />
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -22,11 +21,7 @@ function LaboratoryBillingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Laboratory Billing Services - TransMedex</title>
-        <meta name="description" content="Expert laboratory and pathology billing with CAP/CLIA compliance, specialty CPT coding, and medical necessity verification for reference labs and hospital labs." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

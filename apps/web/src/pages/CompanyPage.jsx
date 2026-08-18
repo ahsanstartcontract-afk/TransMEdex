@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle, ChevronDown, ChevronUp, TrendingUp, Clock, DollarSign } from 'lucide-react';
@@ -62,11 +61,7 @@ function CompanyPage() {
 
   return (
     <>
-      <Helmet>
-        <title>About Us | TransMedex Medical Billing Company</title>
-        <meta name="description" content="Learn about TransMedex, a leading medical billing company in the United States. Discover our services, technology, certifications, and why healthcare practices choose us." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col bg-white text-foreground">
         <Header />
 

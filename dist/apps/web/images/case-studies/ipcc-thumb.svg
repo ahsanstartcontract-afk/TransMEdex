@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320">
+  <rect width="480" height="320" rx="12" fill="#f8fbff"/>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#041526">
+    <text x="24" y="52" font-size="20" font-weight="700">IPCC RCM Recovery</text>
+    <text x="24" y="88" font-size="12" fill="#475569">Reduced AR days 95 → &lt;35</text>
+  </g>
+  <g transform="translate(320,40)">
+    <circle cx="68" cy="68" r="64" fill="#fff7ef"/>
+  </g>
+</svg>

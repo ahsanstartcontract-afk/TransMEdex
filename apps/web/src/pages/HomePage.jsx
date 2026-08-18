@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -169,11 +168,7 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-[#f6f7ff] text-slate-950">
-      <Helmet>
-        <title>TransMedex | Medical Billing Services Company in the USA</title>
-        <meta name="description" content="TransMedex offers medical billing, coding, credentialing, clearinghouse, and revenue cycle management services for healthcare providers across the USA." />
-      </Helmet>
-
+      
       <Header />
 
       <main>

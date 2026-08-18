@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -28,11 +27,7 @@ function PMEPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Pediatric Medical Billing Services (PME) - TransMedex</title>
-        <meta name="description" content="Specialized medical billing for pediatric practices. Expert coding for pediatric medicine with TransMedex." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

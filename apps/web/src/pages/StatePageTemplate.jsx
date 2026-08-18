@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import {
   CheckCircle, AlertCircle, ShieldCheck, Users, FileText,
@@ -13,11 +12,7 @@ import Footer from '@/components/Footer.jsx';
 function StatePageTemplate({ stateName, seoDescription, cities, challenges, heroImage, locationType = "Cities" }) {
   return (
     <>
-      <Helmet>
-        <title>Medical Billing Services in {stateName} - TransMedex</title>
-        <meta name="description" content={seoDescription} />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col overflow-x-hidden">
         <Header />
 

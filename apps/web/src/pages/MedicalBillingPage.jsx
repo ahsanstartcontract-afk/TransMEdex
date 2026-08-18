@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -65,11 +64,7 @@ function MedicalBillingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Medical Billing Services - TransMedex</title>
-        <meta name="description" content="Professional medical billing services that maximize reimbursements and reduce claim denials. Increase collections by up to 40% with TransMedex." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

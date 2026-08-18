@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, ClipboardCheck, BarChart3, Users, Bolt, Layers } from 'lucide-react';
 import Header from '@/components/Header.jsx';
@@ -54,14 +53,7 @@ export default function NextGenPage() {
 
   return (
     <>
-      <Helmet>
-        <title>NextGen Billing Services | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex provides NextGen medical billing services to optimize collections, streamline workflows, and improve revenue through certified billing support."
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen bg-background text-foreground">
         <Header />
 

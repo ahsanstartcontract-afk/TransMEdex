@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, ClipboardCheck, Bolt, Layers, ArrowRight } from 'lucide-react';
 import Header from '@/components/Header.jsx';
@@ -22,7 +21,7 @@ export default function ICANotesPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('ICANotes Contact Us request:', form);
-    alert('Thank you — your ICANotes Contact Us request has been received.');
+    alert('Thank you ï¿½ your ICANotes Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 
@@ -72,14 +71,7 @@ export default function ICANotesPage() {
 
   return (
     <>
-      <Helmet>
-        <title>ICANotes Billing Services | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex provides flexible ICANotes billing and RCM support with certified billers and deep ICANotes software expertise."
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen bg-background text-foreground">
         <Header />
 

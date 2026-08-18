@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight,
@@ -141,14 +140,7 @@ function ServicesPage() {
 
   return (
     <div className="min-h-screen bg-[#f6f7ff] text-slate-950">
-      <Helmet>
-        <title>Medical Billing & Healthcare Services | TransMedex</title>
-        <meta
-          name="description"
-          content="Comprehensive medical billing, coding, credentialing, RCM, and healthcare services for providers. 99% clean claim rate. Serving 75+ specialties."
-        />
-      </Helmet>
-
+      
       <Header />
 
       <main>

@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -46,11 +45,7 @@ function ClearinghousePage() {
 
   return (
     <>
-      <Helmet>
-        <title>Clearinghouse Services - TransMedex</title>
-        <meta name="description" content="Secure electronic claims submission and real-time status tracking. Connect with hundreds of payers through TransMedex clearinghouse services." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -22,11 +21,7 @@ function PatientBenefitsEligibilityPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Patient Benefits & Eligibility Verification - TransMedex</title>
-        <meta name="description" content="Real-time patient eligibility verification and benefits checking. Reduce denials with accurate insurance verification before service delivery." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
@@ -66,14 +65,7 @@ const features = [
 export default function SpecialtiesPage() {
   return (
     <div className="min-h-screen bg-[#f6f7ff] text-slate-950">
-      <Helmet>
-        <title>Medical Billing Services for All Types of Specialties | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex provides specialty-focused medical billing services across dozens of specialties, helping providers increase revenue and reduce denials."
-        />
-      </Helmet>
-
+      
       <Header />
 
       <main className="py-20">

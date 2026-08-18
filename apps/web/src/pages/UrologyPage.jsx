@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -28,11 +27,7 @@ function UrologyPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Urology Medical Billing Services - TransMedex</title>
-        <meta name="description" content="Specialized medical billing for urology practices. Expert coding and billing for urological procedures with TransMedex." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

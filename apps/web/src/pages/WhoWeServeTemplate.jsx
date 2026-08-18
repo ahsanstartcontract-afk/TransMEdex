@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
@@ -84,11 +83,7 @@ function WhoWeServeTemplate({
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle} | TransMedex</title>
-        <meta name="description" content={seoDescription} />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden">
         <Header />
 

@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vite --host :: --port 3000",
-    "build": "node tools/generate-llms.js || true && vite build --outDir ../../dist/apps/web",
+    "build": "node tools/generate-llms.js || true && vite build --outDir ../../dist/apps/web && node tools/prerender.js",
     "start": "vite preview --outDir ../../dist/apps/web --host :: --port 3000",
     "lint": "eslint . --quiet",
     "lint:warn": "eslint ."
@@ -79,6 +79,8 @@
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.14.0",
     "postcss": "^8.4.49",
+    "puppeteer": "^25.8.0",
+    "serve-handler": "^6.1.7",
     "tailwindcss": "^3.4.17",
     "terser": "^5.37.0",
     "vite": "^7.3.1"

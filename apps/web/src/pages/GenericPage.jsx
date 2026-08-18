@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { useParams, Link } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
@@ -30,14 +29,7 @@ function GenericPage({ categoryOverride }) {
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle} | TransMedex</title>
-        <meta
-          name="description"
-          content={`Learn more about ${pageTitle} from TransMedex, the trusted medical billing services provider.`}
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col bg-background text-foreground">
         <Header />
 

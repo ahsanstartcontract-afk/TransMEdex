@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -22,11 +21,7 @@ function RCMPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Revenue Cycle Management (RCM) Services - TransMedex</title>
-        <meta name="description" content="End-to-end RCM services optimizing every touchpoint in your revenue cycle. Reduce A/R days and improve cash flow with TransMedex." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

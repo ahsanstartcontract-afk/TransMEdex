@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, CheckCircle2, Sparkles, Users, BarChart3, ClipboardCheck, ShieldAlert } from 'lucide-react';
 import Header from '@/components/Header.jsx';
@@ -23,7 +22,7 @@ export default function AdvancedMDPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('AdvancedMD Contact Us request:', form);
-    alert('Thank you — your AdvancedMD Contact Us request has been received.');
+    alert('Thank you ï¿½ your AdvancedMD Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '', message: '' });
   };
 
@@ -63,14 +62,7 @@ export default function AdvancedMDPage() {
 
   return (
     <>
-      <Helmet>
-        <title>AdvancedMD Medical Billing Services | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex AdvancedMD medical billing services use certified coders and billers embedded inside AdvancedMD to improve collections and reduce denials."
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen bg-background text-foreground">
         <Header />
 

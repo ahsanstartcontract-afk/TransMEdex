@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, ShieldCheck, ClipboardCheck, BarChart3, Users, Layers } from 'lucide-react';
 import Header from '@/components/Header.jsx';
@@ -14,7 +13,7 @@ export default function CareCloudPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('CareCloud Contact Us request:', form);
-    alert('Thank you — your CareCloud Contact Us request has been received.');
+    alert('Thank you ï¿½ your CareCloud Contact Us request has been received.');
     setForm({ firstName: '', lastName: '', email: '', phone: '', practice: '' });
   };
 
@@ -55,14 +54,7 @@ export default function CareCloudPage() {
 
   return (
     <>
-      <Helmet>
-        <title>CareCloud Billing Services | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex provides CareCloud medical billing and RCM services to improve financial outcomes, reduce denials, and optimize your revenue cycle."
-        />
-      </Helmet>
-
+      
       <div className="min-h-screen bg-background text-foreground">
         <Header />
 

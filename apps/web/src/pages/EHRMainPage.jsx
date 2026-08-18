@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
@@ -74,14 +73,7 @@ const EMRCard = ({ platform }) => {
 export default function EHRMainPage() {
   return (
     <div className="min-h-screen bg-[#f6f7ff] text-slate-950">
-      <Helmet>
-        <title>EHR Platforms We Support | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex supports dozens of top EHR and EHR platforms. Discover our medical billing solutions tailored to your software."
-        />
-      </Helmet>
-
+      
       <Header />
 
       <main className="py-20">

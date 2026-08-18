@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Helmet } from 'react-helmet';
 import { Link, useNavigate } from 'react-router-dom';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
@@ -129,14 +128,7 @@ export default function StatesMainPage() {
 
   return (
     <div className="min-h-screen bg-white text-slate-950 font-sans">
-      <Helmet>
-        <title>States We Serve | TransMedex</title>
-        <meta
-          name="description"
-          content="TransMedex provides expert medical billing and RCM services across all 50 US states. Find tailored solutions for your state's regulations."
-        />
-      </Helmet>
-
+      
       <Header />
 
       {/* Hero Section */}

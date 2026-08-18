@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
@@ -145,11 +144,7 @@ function ContactPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Contact Us | TransMedex</title>
-        <meta name="description" content="Contact Us with TransMedex. Stop spending your valuable time battling billing woes." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col bg-background text-foreground overflow-hidden">
         <Header />
 

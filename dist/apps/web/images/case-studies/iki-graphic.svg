@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#f2fbff"/>
+  <g font-family="Helvetica, Arial, sans-serif" fill="#08263a">
+    <text x="24" y="48" font-size="22" font-weight="700">IKI — Accounts Receivable Recovery</text>
+    <text x="24" y="80" font-size="14" fill="#475569">Rapid backlog recovery, denial remediation, and cashflow improvement.</text>
+    <rect x="24" y="110" width="560" height="200" rx="12" fill="#fff" stroke="#e6f9ff"/>
+  </g>
+</svg>

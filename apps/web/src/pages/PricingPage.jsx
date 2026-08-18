@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check, Mail, Phone, Calendar, MapPin, Building, Globe, CheckCircle2, ArrowRight } from 'lucide-react';
@@ -126,11 +125,7 @@ function PricingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Pricing | TransMedex</title>
-        <meta name="description" content="View our flexible medical billing pricing plans tailored to your practice's monthly collections." />
-      </Helmet>
-      
+            
       <div className="min-h-screen flex flex-col bg-slate-50 text-foreground font-sans">
         <Header />
 

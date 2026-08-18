@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { CheckCircle, ArrowRight } from 'lucide-react';
@@ -22,11 +21,7 @@ function MedicalAuditPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Medical Billing Audit Services - TransMedex</title>
-        <meta name="description" content="Comprehensive medical billing audits to identify revenue recovery, coding compliance, and denial reduction opportunities. Proactive audits protect your practice." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 

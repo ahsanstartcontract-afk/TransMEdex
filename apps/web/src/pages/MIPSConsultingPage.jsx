@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -21,11 +20,7 @@ function MIPSConsultingPage() {
 
   return (
     <>
-      <Helmet>
-        <title>MIPS Consulting & Compliance Services - TransMedex</title>
-        <meta name="description" content="MIPS consulting, performance reporting, and improvement activities. Avoid payment penalties while improving quality metrics with TransMedex." />
-      </Helmet>
-
+      
       <div className="min-h-screen flex flex-col">
         <Header />
 
