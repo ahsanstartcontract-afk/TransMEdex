@@ -153,10 +153,10 @@ function HomePage() {
   const [carouselApi, setCarouselApi] = useState(null);
   const [statsRef, statsVisible] = useScrollReveal(0.2);
 
-  const stat1 = useCounter('1500', 2000, statsVisible);
-  const stat2 = useCounter('75', 1500, statsVisible);
-  const stat3 = useCounter('1200', 2000, statsVisible);
-  const stat4 = useCounter('98', 1500, statsVisible);
+  const stat1 = useCounter('25', 2000, statsVisible);
+  const stat2 = useCounter('15', 1500, statsVisible);
+  const stat3 = useCounter('50', 2000, statsVisible);
+  const stat4 = useCounter('95', 1500, statsVisible);
 
   useEffect(() => {
     if (!carouselApi) return;
@@ -288,7 +288,7 @@ function HomePage() {
         {/* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• TRUST RIBBON â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */}
         <section className="py-12 px-4 sm:px-6 lg:px-8 bg-slate-50">
           <motion.div className="mx-auto max-w-7xl grid gap-4 sm:grid-cols-3" initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}>
-            {['1500+ Satisfied Providers', 'Serving More Than 75 Specialties', '1200+ Billing and Coding Experts'].map((text, idx) => (
+            {['25+ Satisfied Providers', 'Serving More Than 15 Specialties', '50+ Billing and Coding Experts'].map((text, idx) => (
               <motion.div key={idx} variants={scaleIn} className="rounded-3xl gradient-bg-rich px-6 py-6 text-white shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(131,45,112,0.4)] transition-shadow duration-300">
                 <p className="text-sm uppercase tracking-[0.24em] text-white/80">{text}</p>
               </motion.div>
@@ -301,7 +301,7 @@ function HomePage() {
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <motion.div className="text-center" initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp}>
               <h2 className="text-3xl font-bold tracking-[-0.03em] text-slate-950">Our Success in Numbers</h2>
-              <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600">Trusted by healthcare organizations across the USA. See why 1500+ medical practices choose TransMedex.</p>
+              <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate-600">Trusted by healthcare organizations across the USA. See why 25+ medical practices choose TransMedex.</p>
             </motion.div>
 
             <div ref={statsRef} className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
@@ -499,13 +499,13 @@ function HomePage() {
               <div className="grid gap-6">
                 <motion.div className="rounded-[2rem] border border-slate-200 bg-white p-8 text-center shadow-sm hover-lift" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
                   <p className="text-sm uppercase tracking-[0.24em] text-primary">Happiness Score</p>
-                  <p className="mt-4 text-5xl font-bold gradient-text">96%</p>
-                  <p className="mt-4 text-sm text-slate-600">Based on a 4.8-star rating from 350+ providers across the states.</p>
+                  <p className="mt-4 text-5xl font-bold gradient-text">92%</p>
+                  <p className="mt-4 text-sm text-slate-600">Based on a 4.8-star rating from 25+ providers across the states.</p>
                   <Link className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all duration-300" to="/contact">See testimonials <ArrowRight className="h-4 w-4" /></Link>
                 </motion.div>
                 <motion.div className="rounded-[2rem] border border-slate-200 bg-white p-8 text-center shadow-sm hover-lift" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.15 }}>
                   <p className="text-sm uppercase tracking-[0.24em] text-primary">Billing Experts</p>
-                  <p className="mt-4 text-5xl font-bold gradient-text">1.2k+</p>
+                  <p className="mt-4 text-5xl font-bold gradient-text">50+</p>
                   <p className="mt-4 text-sm text-slate-600">CMRS, RHIA, CPB certified medical billers and coders for every specialty.</p>
                   <Link className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all duration-300" to="/services/medical-billing">About us <ArrowRight className="h-4 w-4" /></Link>
                 </motion.div>
