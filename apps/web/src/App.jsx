@@ -1,69 +1,70 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import { Toaster } from '@/components/ui/sonner';
 import ScrollToTop from '@/components/ScrollToTop.jsx';
 import SEOHead from '@/components/SEOHead.jsx';
 
 // Pages
-import HomePage from '@/pages/HomePage.jsx';
-import ContactPage from '@/pages/ContactPage.jsx';
-import SpecialtiesPage from '@/pages/SpecialtiesPage.jsx';
-import SpecialtyTemplate from '@/pages/SpecialtyTemplate.jsx';
-import ABATherapyPage from '@/pages/ABATherapyPage.jsx';
-import BehavioralHealthPage from '@/pages/BehavioralHealthPage.jsx';
-import CardiologyPage from '@/pages/CardiologyPage.jsx';
-import OrthopedicsPage from '@/pages/OrthopedicsPage.jsx';
-import PMEPage from '@/pages/PMEPage.jsx';
-import SportsMedicinePage from '@/pages/SportsMedicinePage.jsx';
-import UrgentCarePage from '@/pages/UrgentCarePage.jsx';
-import UrologyPage from '@/pages/UrologyPage.jsx';
+const HomePage = lazy(() => import('@/pages/HomePage.jsx'));
+const ContactPage = lazy(() => import('@/pages/ContactPage.jsx'));
+const SpecialtiesPage = lazy(() => import('@/pages/SpecialtiesPage.jsx'));
+const SpecialtyTemplate = lazy(() => import('@/pages/SpecialtyTemplate.jsx'));
+const ABATherapyPage = lazy(() => import('@/pages/ABATherapyPage.jsx'));
+const BehavioralHealthPage = lazy(() => import('@/pages/BehavioralHealthPage.jsx'));
+const CardiologyPage = lazy(() => import('@/pages/CardiologyPage.jsx'));
+const OrthopedicsPage = lazy(() => import('@/pages/OrthopedicsPage.jsx'));
+const PMEPage = lazy(() => import('@/pages/PMEPage.jsx'));
+const SportsMedicinePage = lazy(() => import('@/pages/SportsMedicinePage.jsx'));
+const UrgentCarePage = lazy(() => import('@/pages/UrgentCarePage.jsx'));
+const UrologyPage = lazy(() => import('@/pages/UrologyPage.jsx'));
 
 // State Pages
-import TexasPage from '@/pages/TexasPage.jsx';
-import CaliforniaPage from '@/pages/CaliforniaPage.jsx';
-import DelawarePage from '@/pages/DelawarePage.jsx';
-import FloridaPage from '@/pages/FloridaPage.jsx';
-import NevadaPage from '@/pages/NevadaPage.jsx';
-import NewJerseyPage from '@/pages/NewJerseyPage.jsx';
-import NewYorkPage from '@/pages/NewYorkPage.jsx';
-import PennsylvaniaPage from '@/pages/PennsylvaniaPage.jsx';
+const TexasPage = lazy(() => import('@/pages/TexasPage.jsx'));
+const CaliforniaPage = lazy(() => import('@/pages/CaliforniaPage.jsx'));
+const DelawarePage = lazy(() => import('@/pages/DelawarePage.jsx'));
+const FloridaPage = lazy(() => import('@/pages/FloridaPage.jsx'));
+const NevadaPage = lazy(() => import('@/pages/NevadaPage.jsx'));
+const NewJerseyPage = lazy(() => import('@/pages/NewJerseyPage.jsx'));
+const NewYorkPage = lazy(() => import('@/pages/NewYorkPage.jsx'));
+const PennsylvaniaPage = lazy(() => import('@/pages/PennsylvaniaPage.jsx'));
 
 // Who We Serve Pages
-import MedicalGroupPracticesPage from '@/pages/MedicalGroupPracticesPage.jsx';
-import OutsourceBillingServicesPage from '@/pages/OutsourceBillingServicesPage.jsx';
-import SmallPracticesPage from '@/pages/SmallPracticesPage.jsx';
-import HospitalsHealthSystemsPage from '@/pages/HospitalsHealthSystemsPage.jsx';
-import IndependentPracticesPage from '@/pages/IndependentPracticesPage.jsx';
+const MedicalGroupPracticesPage = lazy(() => import('@/pages/MedicalGroupPracticesPage.jsx'));
+const OutsourceBillingServicesPage = lazy(() => import('@/pages/OutsourceBillingServicesPage.jsx'));
+const SmallPracticesPage = lazy(() => import('@/pages/SmallPracticesPage.jsx'));
+const HospitalsHealthSystemsPage = lazy(() => import('@/pages/HospitalsHealthSystemsPage.jsx'));
+const IndependentPracticesPage = lazy(() => import('@/pages/IndependentPracticesPage.jsx'));
 
 // Service Pages
-import ServicesPage from '@/pages/ServicesPage.jsx';
-import MedicalBillingPage from '@/pages/MedicalBillingPage.jsx';
-import RCMPage from '@/pages/RCMPage.jsx';
-import MedicalCodingPage from '@/pages/MedicalCodingPage.jsx';
-import ClearinghousePage from '@/pages/ClearinghousePage.jsx';
-import MedicalAuditPage from '@/pages/MedicalAuditPage.jsx';
-import HealthcareSEOPage from '@/pages/HealthcareSEOPage.jsx';
-import LaboratoryBillingPage from '@/pages/LaboratoryBillingPage.jsx';
-import MIPSConsultingPage from '@/pages/MIPSConsultingPage.jsx';
-import PatientBenefitsEligibilityPage from '@/pages/PatientBenefitsEligibilityPage.jsx';
-import MedicalBillingCodingPage from '@/pages/MedicalBillingCodingPage.jsx';
-import EpicPage from '@/pages/EpicPage.jsx';
-import AthenahealthPage from '@/pages/AthenahealthPage.jsx';
-import AdvancedMDPage from '@/pages/AdvancedMDPage.jsx';
-import ICANotesPage from '@/pages/ICANotesPage.jsx';
-import NextGenPage from '@/pages/NextGenPage.jsx';
-import CareCloudPage from '@/pages/CareCloudPage.jsx';
-import GenericPage from '@/pages/GenericPage.jsx';
-import CompanyPage from '@/pages/CompanyPage.jsx';
-import PricingPage from '@/pages/PricingPage.jsx';
-import EHRMainPage from '@/pages/EHRMainPage.jsx';
-import StatesMainPage from '@/pages/StatesMainPage.jsx';
+const ServicesPage = lazy(() => import('@/pages/ServicesPage.jsx'));
+const MedicalBillingPage = lazy(() => import('@/pages/MedicalBillingPage.jsx'));
+const RCMPage = lazy(() => import('@/pages/RCMPage.jsx'));
+const MedicalCodingPage = lazy(() => import('@/pages/MedicalCodingPage.jsx'));
+const ClearinghousePage = lazy(() => import('@/pages/ClearinghousePage.jsx'));
+const MedicalAuditPage = lazy(() => import('@/pages/MedicalAuditPage.jsx'));
+const HealthcareSEOPage = lazy(() => import('@/pages/HealthcareSEOPage.jsx'));
+const LaboratoryBillingPage = lazy(() => import('@/pages/LaboratoryBillingPage.jsx'));
+const MIPSConsultingPage = lazy(() => import('@/pages/MIPSConsultingPage.jsx'));
+const PatientBenefitsEligibilityPage = lazy(() => import('@/pages/PatientBenefitsEligibilityPage.jsx'));
+const MedicalBillingCodingPage = lazy(() => import('@/pages/MedicalBillingCodingPage.jsx'));
+const EpicPage = lazy(() => import('@/pages/EpicPage.jsx'));
+const AthenahealthPage = lazy(() => import('@/pages/AthenahealthPage.jsx'));
+const AdvancedMDPage = lazy(() => import('@/pages/AdvancedMDPage.jsx'));
+const ICANotesPage = lazy(() => import('@/pages/ICANotesPage.jsx'));
+const NextGenPage = lazy(() => import('@/pages/NextGenPage.jsx'));
+const CareCloudPage = lazy(() => import('@/pages/CareCloudPage.jsx'));
+const GenericPage = lazy(() => import('@/pages/GenericPage.jsx'));
+const CompanyPage = lazy(() => import('@/pages/CompanyPage.jsx'));
+const PricingPage = lazy(() => import('@/pages/PricingPage.jsx'));
+const EHRMainPage = lazy(() => import('@/pages/EHRMainPage.jsx'));
+const StatesMainPage = lazy(() => import('@/pages/StatesMainPage.jsx'));
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <SEOHead />
+      <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#0da1df]"></div></div>}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -136,6 +137,7 @@ function App() {
           </div>
         } />
       </Routes>
+      </Suspense>
       <Toaster position="bottom-right" />
     </Router>
   );
