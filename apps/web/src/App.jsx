@@ -56,6 +56,7 @@ const CareCloudPage = lazy(() => import('@/pages/CareCloudPage.jsx'));
 const GenericPage = lazy(() => import('@/pages/GenericPage.jsx'));
 const CompanyPage = lazy(() => import('@/pages/CompanyPage.jsx'));
 const BlogPage = lazy(() => import('@/pages/BlogPage.jsx'));
+const BlogTemplate = lazy(() => import('@/pages/BlogTemplate.jsx'));
 const PricingPage = lazy(() => import('@/pages/PricingPage.jsx'));
 const EHRMainPage = lazy(() => import('@/pages/EHRMainPage.jsx'));
 const StatesMainPage = lazy(() => import('@/pages/StatesMainPage.jsx'));
@@ -127,6 +128,7 @@ function App() {
         {/* Resources Routes */}
         <Route path="/resources/company" element={<CompanyPage />} />
         <Route path="/resources/blog" element={<BlogPage />} />
+        <Route path="/resources/blog/:slug" element={<BlogTemplate />} />
         <Route path="/resources/:slug" element={<GenericPage categoryOverride="resources" />} />
         
         {/* Catch-all 404 */}

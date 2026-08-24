@@ -168,7 +168,7 @@ function HomePage() {
 
   return (
     <div className="min-h-screen bg-[#f6f7ff] text-slate-950">
-      
+
       <Header />
 
       <main>
@@ -184,7 +184,7 @@ function HomePage() {
               {/* Left Content */}
               <motion.div className="space-y-8" initial="hidden" animate="visible" variants={staggerContainer}>
                 <motion.div variants={fadeInUp} className="text-sm uppercase tracking-[0.35em] text-slate-500">Medical Billing Services</motion.div>
-                <motion.div variants={fadeInUp} className="space-y-6">
+                <div className="space-y-6">
                   <h1 className="text-3xl sm:text-4xl font-bold tracking-[-0.04em] text-slate-950 md:text-5xl lg:text-6xl">
                     The Medical Billing Service <span className="gradient-text">Provider for</span> <span className="text-slate-950">USA Healthcare</span>
                   </h1>
@@ -194,7 +194,7 @@ function HomePage() {
                   <p className="max-w-xl text-lg leading-8 text-slate-600">
                     Our certified medical coders and billers help healthcare organizations recover Aged Receivables and resolve insurance Claim Denials, as well.
                   </p>
-                </motion.div>
+                </div>
 
                 <motion.div variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 text-sm font-semibold text-slate-800">
                   <div className="flex items-center gap-2"><CheckCircle className="h-5 w-5 text-emerald-500" /> 40+ Specialties Billed Daily</div>
@@ -210,7 +210,7 @@ function HomePage() {
               <motion.div className="relative" initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}>
                 <div className="absolute -right-16 top-10 h-[440px] w-[440px] rounded-full bg-gradient-to-br from-primary/25 to-[#591667]/10 blur-3xl animate-pulse-glow" />
                 <div className="relative overflow-hidden rounded-[1.25rem] border border-white/40 glass-card p-3 shadow-2xl shadow-primary/10">
-                  <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1200&q=80" alt="Doctor with patient" className="h-[300px] md:h-[420px] w-full rounded-xl object-cover block" onError={(e) => { e.currentTarget.src = 'https://via.placeholder.com/800x520?text=Doctor+Image'; }} />
+                  <img src="/hero-image.png" alt="Doctor with patient" className="h-[300px] md:h-[420px] w-full rounded-xl object-cover block" fetchpriority="high" loading="eager" />
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white/80 to-transparent rounded-b-xl" />
                 </div>
               </motion.div>
@@ -565,7 +565,7 @@ function HomePage() {
 
               <motion.div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-50 p-4 shadow-lg" initial={{ opacity: 0, x: 40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }}>
                 <div className="absolute -right-12 top-8 h-48 w-48 rounded-full bg-primary/10 blur-3xl animate-pulse-glow" />
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Medical professionals" className="h-[300px] md:h-[520px] w-full rounded-[1.75rem] object-cover" />
+                <img src="/medical-center.jpg" alt="Medical professionals" className="h-[300px] md:h-[520px] w-full rounded-[1.75rem] object-cover" />
               </motion.div>
             </div>
           </div>
