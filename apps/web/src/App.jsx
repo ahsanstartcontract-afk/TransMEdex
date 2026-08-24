@@ -55,6 +55,7 @@ const NextGenPage = lazy(() => import('@/pages/NextGenPage.jsx'));
 const CareCloudPage = lazy(() => import('@/pages/CareCloudPage.jsx'));
 const GenericPage = lazy(() => import('@/pages/GenericPage.jsx'));
 const CompanyPage = lazy(() => import('@/pages/CompanyPage.jsx'));
+const BlogPage = lazy(() => import('@/pages/BlogPage.jsx'));
 const PricingPage = lazy(() => import('@/pages/PricingPage.jsx'));
 const EHRMainPage = lazy(() => import('@/pages/EHRMainPage.jsx'));
 const StatesMainPage = lazy(() => import('@/pages/StatesMainPage.jsx'));
@@ -123,7 +124,9 @@ function App() {
         <Route path="/who-we-serve/independent-practices" element={<IndependentPracticesPage />} />
         <Route path="/who-we-serve/:slug" element={<GenericPage categoryOverride="who-we-serve" />} />
         
+        {/* Resources Routes */}
         <Route path="/resources/company" element={<CompanyPage />} />
+        <Route path="/resources/blog" element={<BlogPage />} />
         <Route path="/resources/:slug" element={<GenericPage categoryOverride="resources" />} />
         
         {/* Catch-all 404 */}

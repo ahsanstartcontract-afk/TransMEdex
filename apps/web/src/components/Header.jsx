@@ -91,6 +91,7 @@ function Header() {
 
   const resources = [
     { name: 'Company', path: '/resources/company', icon: <Globe className="w-4 h-4" /> },
+    { name: 'Blog', path: '/resources/blog', icon: <BookOpen className="w-4 h-4" /> },
     { name: 'Case Studies', path: '/resources/case-studies', icon: <FileBarChart className="w-4 h-4" /> }
   ];
 
