@@ -142,13 +142,11 @@ function BlogPage() {
                       >
                         {/* Image area */}
                         <div className="relative h-52 overflow-hidden bg-slate-100 shrink-0">
-                          {/* Placeholder gradient — replace with real <img> when images are ready */}
-                          <div
-                            className="absolute inset-0"
-                            style={{
-                              background: `linear-gradient(135deg, ${post.color}22 0%, ${post.color}11 50%, #f1f5f9 100%)`
-                            }}
-                          />
+                          {post.image ? (
+                            <img src={post.image} alt={post.title} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                          ) : (
+                            <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${post.color}22 0%, ${post.color}11 50%, #f1f5f9 100%)` }} />
+                          )}
                           {/* Category badge */}
                           <span
                             className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold tracking-widest text-white shadow-sm"
